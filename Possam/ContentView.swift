@@ -57,11 +57,20 @@ struct ContentView: View {
                     
                     // Audio waveform
                     PremiumWaveformView(
-                        isActive: vapiViewModel.isUserSpeaking || vapiViewModel.isAssistantSpeaking,
+                        isActive: vapiViewModel.isAssistantSpeaking || vapiViewModel.isUserSpeaking,
                         amplitude: waveAmplitude,
                         color: vapiViewModel.isUserSpeaking ? Color.premiumAccent : Color.premiumAccent.opacity(0.8)
                     )
                     .frame(width: 150, height: 100)
+
+                    // Idle prompt
+                    if waveAmplitude == 0 && !vapiViewModel.isCallActive {
+                        Text("tap the mic to\n start cleaning\nyour inbox!")
+                            .font(.system(size: 16, weight: .semibold))
+                            .foregroundColor(Color.premiumAccent)
+                            .transition(.opacity)
+                            .multilineTextAlignment(.center)
+                    }
                     
                     // Pulse effect when active
                     Circle()
@@ -221,22 +230,6 @@ struct ContentView: View {
                 }
             }
             
-            // Loading overlay
-            if vapiViewModel.isConnecting {
-                Color.black.opacity(0.3)
-                    .ignoresSafeArea()
-                    .transition(.opacity)
-                
-                VStack(spacing: 20) {
-                    LuxuryLoadingIndicator()
-                        .frame(width: 80, height: 80)
-                    
-                    Text("Connecting...")
-                        .font(.system(size: 16, weight: .medium))
-                        .foregroundColor(.white)
-                }
-                .transition(.opacity)
-            }
         }
         .edgesIgnoringSafeArea(.all)
         // Add edge swipe gesture to open menu
@@ -256,17 +249,14 @@ struct ContentView: View {
             withAnimation(Animation.easeInOut(duration: 1.5).repeatForever(autoreverses: true)) {
                 pulseAnimation = true
             }
-            
-            // Animate the wave amplitude
-            withAnimation(Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true)) {
-                waveAmplitude = 1.0
-            }
+            updateWaveAmplitude()
         }
         // Monitor app state changes
         .onChange(of: scenePhase) { newPhase in
             handleScenePhaseChange(newPhase)
         }
         .onChange(of: vapiViewModel.isUserSpeaking) { isSpeaking in
+            updateWaveAmplitude()
             if isSpeaking {
                 updateStatus("Listening...")
             } else if vapiViewModel.isCallActive {
@@ -274,6 +264,7 @@ struct ContentView: View {
             }
         }
         .onChange(of: vapiViewModel.isAssistantSpeaking) { isSpeaking in
+            updateWaveAmplitude()
             if isSpeaking {
                 updateStatus("Speaking...")
                 // Ensure the call is visibly active when assistant starts speaking
@@ -283,6 +274,9 @@ struct ContentView: View {
             } else if vapiViewModel.isCallActive && !vapiViewModel.isUserSpeaking {
                 updateStatus("Thinking...")
             }
+        }
+        .onChange(of: vapiViewModel.isConnecting) { _ in
+            updateWaveAmplitude()
         }
         .onChange(of: vapiViewModel.isCallActive) { isActive in
             if isActive {
@@ -295,6 +289,22 @@ struct ContentView: View {
         }
     }
     
+    // Update waveform amplitude depending on call state
+    private func updateWaveAmplitude() {
+        let newAmp: CGFloat
+        if vapiViewModel.isAssistantSpeaking {
+            newAmp = 1.0          // big bounce (robot speaking)
+        } else if vapiViewModel.isUserSpeaking || vapiViewModel.isConnecting {
+            newAmp = 0.4          // small bounce (human speaking or connecting)
+        } else {
+            newAmp = 0.0          // idle – flat line
+        }
+
+        withAnimation(.easeInOut(duration: 0.2)) {
+            waveAmplitude = newAmp
+        }
+    }
+
     // Handle app state changes
     private func handleScenePhaseChange(_ newPhase: ScenePhase) {
         switch newPhase {
@@ -378,6 +388,9 @@ struct PremiumWaveformView: View {
     }
     
     private func barHeight(at index: Int) -> CGFloat {
+        if amplitude == 0 {
+            return 0
+        }
         if !isActive {
             return 10 + (index % 3 == 0 ? 5 : 0)
         }
