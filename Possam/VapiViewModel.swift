@@ -94,7 +94,7 @@ class VapiViewModel: ObservableObject {
         Task {
             do {
                 try await vapi?.start(
-                  assistantId: "33c3ecd4-7808-45be-9935-fc23876a1ac8",
+                  assistantId: "85e3d8f8-5467-48ec-a8b9-8fc401947e3d",
                   metadata: [:]
                 )
             } catch {
