@@ -260,6 +260,22 @@ struct ContentView: View {
             withAnimation(Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true)) {
                 waveAmplitude = 1.0
             }
+            
+            // Listen for Siri start requests
+            NotificationCenter.default.addObserver(
+                forName: InboxSiriManager.siriStartMicNotificationName,
+                object: nil,
+                queue: .main
+            ) { _ in
+                self.updateStatus("Starting via Siri...")
+                // Start mic after a brief delay to allow UI to update
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    self.vapiViewModel.startAssistant()
+                }
+            }
+            
+            // Donate the intent to Siri
+            InboxSiriManager.shared.donateStartMicIntent()
         }
         // Monitor app state changes
         .onChange(of: scenePhase) { newPhase in

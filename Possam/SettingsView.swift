@@ -96,6 +96,14 @@ struct SettingsView: View {
                                     iconColor: .black
                                 )
                             }
+                            
+                            NavigationLink(destination: SiriShortcutsView()) {
+                                SettingsRowView(
+                                    icon: "waveform.circle.fill",
+                                    title: "Siri Shortcuts",
+                                    iconColor: .blue
+                                )
+                            }
                         }
                         .listRowSeparator(.visible)
                         

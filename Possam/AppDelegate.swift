@@ -1,14 +1,8 @@
-//
-//  AppDelegate.swift
-//  Possam
-//
-//  Created by Akash Thakur on 4/29/25.
-//
-
 import UIKit
 import SwiftUI
 import AVFAudio
 import GoogleSignIn
+import Intents
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
@@ -26,6 +20,9 @@ class AppDelegate: NSObject, UIApplicationDelegate {
             object: nil
         )
         
+        // Donate the StartMic intent to Siri
+        InboxSiriManager.shared.donateStartMicIntent()
+        
         return true
     }
     
@@ -36,6 +33,20 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         }
         
         // Handle other URL schemes if needed
+        return false
+    }
+    
+    // MARK: - Siri Intent Handling
+    
+    // Support for handling intents while app is in foreground
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        // Check if this is a Siri intent
+        if let intent = userActivity.interaction?.intent as? StartMicIntent {
+            // Post notification to start mic
+            NotificationCenter.default.post(name: InboxSiriManager.siriStartMicNotificationName, object: nil)
+            return true
+        }
+        
         return false
     }
     
@@ -66,6 +77,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         }
     }
     
+    // Audio session configuration
     private func configureAudioSession() {
         do {
             let session = AVAudioSession.sharedInstance()

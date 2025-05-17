@@ -19,6 +19,18 @@
 		1303FFA72DD92E0C00962E3D /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FFA62DD92E0C00962E3D /* ColorExtension.swift */; };
 		1303FFA82DD92E0C00962E3D /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FFA62DD92E0C00962E3D /* ColorExtension.swift */; };
 		1303FFA92DD92E0C00962E3D /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FFA62DD92E0C00962E3D /* ColorExtension.swift */; };
+		1303FFAB2DD9339700962E3D /* StartMicIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FFAA2DD9339700962E3D /* StartMicIntentHandler.swift */; };
+		1303FFAC2DD9339700962E3D /* StartMicIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FFAA2DD9339700962E3D /* StartMicIntentHandler.swift */; };
+		1303FFAD2DD9339700962E3D /* StartMicIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FFAA2DD9339700962E3D /* StartMicIntentHandler.swift */; };
+		1303FFB32DD9353A00962E3D /* SiriShortcutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FFB22DD9353A00962E3D /* SiriShortcutsView.swift */; };
+		1303FFB42DD9353A00962E3D /* SiriShortcutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FFB22DD9353A00962E3D /* SiriShortcutsView.swift */; };
+		1303FFB52DD9353A00962E3D /* SiriShortcutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FFB22DD9353A00962E3D /* SiriShortcutsView.swift */; };
+		1303FFBF2DD939DC00962E3D /* InboxSiriManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FFBE2DD939DC00962E3D /* InboxSiriManager.swift */; };
+		1303FFC02DD939DC00962E3D /* InboxSiriManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FFBE2DD939DC00962E3D /* InboxSiriManager.swift */; };
+		1303FFC12DD939DC00962E3D /* InboxSiriManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FFBE2DD939DC00962E3D /* InboxSiriManager.swift */; };
+		1303FFC82DD945A100962E3D /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1303FFC72DD945A100962E3D /* Intents.framework */; };
+		1303FFCF2DD945A100962E3D /* Inbox0IntentExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1303FFC62DD945A100962E3D /* Inbox0IntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1303FFDD2DD9499A00962E3D /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 1303FFDC2DD9499A00962E3D /* GoogleSignIn */; };
 		1347CD7A2DB5E67A0034CA90 /* Vapi in Frameworks */ = {isa = PBXBuildFile; productRef = 1347CD792DB5E67A0034CA90 /* Vapi */; };
 		1347CD9F2DB7FD480034CA90 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 1347CD9E2DB7FD480034CA90 /* Auth */; };
 		1347CDA12DB7FEC90034CA90 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1347CDA02DB7FEC90034CA90 /* Supabase */; };
@@ -95,6 +107,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1303FFCD2DD945A100962E3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1347CD3D2DB5E3BF0034CA90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1303FFC52DD945A100962E3D;
+			remoteInfo = Inbox0IntentExtension;
+		};
 		1347CD5B2DB5E3C10034CA90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1347CD3D2DB5E3BF0034CA90 /* Project object */;
@@ -111,11 +130,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1303FFD42DD945A100962E3D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1303FFCF2DD945A100962E3D /* Inbox0IntentExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1303FF922DD91EB600962E3D /* SimplifiedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplifiedModels.swift; sourceTree = "<group>"; };
 		1303FF962DD9269900962E3D /* PremiumButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumButtonStyle.swift; sourceTree = "<group>"; };
 		1303FFA22DD92DEA00962E3D /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		1303FFA62DD92E0C00962E3D /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		1303FFAA2DD9339700962E3D /* StartMicIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMicIntentHandler.swift; sourceTree = "<group>"; };
+		1303FFB22DD9353A00962E3D /* SiriShortcutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriShortcutsView.swift; sourceTree = "<group>"; };
+		1303FFBE2DD939DC00962E3D /* InboxSiriManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxSiriManager.swift; sourceTree = "<group>"; };
+		1303FFC62DD945A100962E3D /* Inbox0IntentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Inbox0IntentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1303FFC72DD945A100962E3D /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		1347CD452DB5E3BF0034CA90 /* Possam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Possam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1347CD5A2DB5E3C10034CA90 /* PossamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PossamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1347CD642DB5E3C10034CA90 /* PossamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PossamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,7 +183,62 @@
 		1347CE712DC56C540034CA90 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1303FFD02DD945A100962E3D /* Exceptions for "Inbox0IntentExtension" folder in "Inbox0IntentExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				VoiceEliteIntents.intentdefinition,
+			);
+			target = 1303FFC52DD945A100962E3D /* Inbox0IntentExtension */;
+		};
+		1303FFD52DD945C100962E3D /* Exceptions for "Inbox0IntentExtension" folder in "Possam" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				VoiceEliteIntents.intentdefinition,
+			);
+			target = 1347CD442DB5E3BF0034CA90 /* Possam */;
+		};
+		1303FFD62DD945C100962E3D /* Exceptions for "Inbox0IntentExtension" folder in "PossamTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				VoiceEliteIntents.intentdefinition,
+			);
+			target = 1347CD592DB5E3C10034CA90 /* PossamTests */;
+		};
+		1303FFD72DD945C100962E3D /* Exceptions for "Inbox0IntentExtension" folder in "PossamUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				VoiceEliteIntents.intentdefinition,
+			);
+			target = 1347CD632DB5E3C10034CA90 /* PossamUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1303FFC92DD945A100962E3D /* Inbox0IntentExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1303FFD52DD945C100962E3D /* Exceptions for "Inbox0IntentExtension" folder in "Possam" target */,
+				1303FFD62DD945C100962E3D /* Exceptions for "Inbox0IntentExtension" folder in "PossamTests" target */,
+				1303FFD72DD945C100962E3D /* Exceptions for "Inbox0IntentExtension" folder in "PossamUITests" target */,
+				1303FFD02DD945A100962E3D /* Exceptions for "Inbox0IntentExtension" folder in "Inbox0IntentExtension" target */,
+			);
+			path = Inbox0IntentExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		1303FFC32DD945A100962E3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1303FFC82DD945A100962E3D /* Intents.framework in Frameworks */,
+				1303FFDD2DD9499A00962E3D /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1347CD422DB5E3BF0034CA90 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +274,7 @@
 				1347CDFB2DC188AD0034CA90 /* Possam */,
 				1347CDFE2DC188AD0034CA90 /* PossamTests */,
 				1347CE012DC188AD0034CA90 /* PossamUITests */,
+				1303FFC92DD945A100962E3D /* Inbox0IntentExtension */,
 				1347CD782DB5E67A0034CA90 /* Frameworks */,
 				1347CD462DB5E3BF0034CA90 /* Products */,
 			);
@@ -192,6 +286,7 @@
 				1347CD452DB5E3BF0034CA90 /* Possam.app */,
 				1347CD5A2DB5E3C10034CA90 /* PossamTests.xctest */,
 				1347CD642DB5E3C10034CA90 /* PossamUITests.xctest */,
+				1303FFC62DD945A100962E3D /* Inbox0IntentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,6 +294,7 @@
 		1347CD782DB5E67A0034CA90 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1303FFC72DD945A100962E3D /* Intents.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -221,10 +317,12 @@
 				1347CE612DC1BF890034CA90 /* AppDelegate.swift */,
 				1347CDE82DC188AD0034CA90 /* GoogleAuthManager.swift */,
 				1347CE712DC56C540034CA90 /* SettingsView.swift */,
+				1303FFB22DD9353A00962E3D /* SiriShortcutsView.swift */,
 				1347CDEB2DC188AD0034CA90 /* Info.plist */,
 				1347CDEC2DC188AD0034CA90 /* LoginView.swift */,
 				1347CDED2DC188AD0034CA90 /* Models.swift */,
 				1347CE652DC1C44B0034CA90 /* AppCoordinator.swift */,
+				1303FFAA2DD9339700962E3D /* StartMicIntentHandler.swift */,
 				1347CE6D2DC1D6BA0034CA90 /* EmailVerificationView.swift */,
 				1347CDF02DC188AD0034CA90 /* Persistence.swift */,
 				1347CDF32DC188AD0034CA90 /* SignupView.swift */,
@@ -233,6 +331,7 @@
 				1347CE692DC1C5590034CA90 /* PossamApp.swift */,
 				1303FFA22DD92DEA00962E3D /* AppColors.swift */,
 				1347CDF52DC188AD0034CA90 /* SupabaseAuthManager.swift */,
+				1303FFBE2DD939DC00962E3D /* InboxSiriManager.swift */,
 				1303FFA62DD92E0C00962E3D /* ColorExtension.swift */,
 				1347CDF62DC188AD0034CA90 /* ToolsView.swift */,
 				1303FF962DD9269900962E3D /* PremiumButtonStyle.swift */,
@@ -263,6 +362,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1303FFC52DD945A100962E3D /* Inbox0IntentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1303FFD12DD945A100962E3D /* Build configuration list for PBXNativeTarget "Inbox0IntentExtension" */;
+			buildPhases = (
+				1303FFC22DD945A100962E3D /* Sources */,
+				1303FFC32DD945A100962E3D /* Frameworks */,
+				1303FFC42DD945A100962E3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1303FFC92DD945A100962E3D /* Inbox0IntentExtension */,
+			);
+			name = Inbox0IntentExtension;
+			packageProductDependencies = (
+				1303FFDC2DD9499A00962E3D /* GoogleSignIn */,
+			);
+			productName = Inbox0IntentExtension;
+			productReference = 1303FFC62DD945A100962E3D /* Inbox0IntentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		1347CD442DB5E3BF0034CA90 /* Possam */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1347CD6E2DB5E3C10034CA90 /* Build configuration list for PBXNativeTarget "Possam" */;
@@ -270,10 +392,12 @@
 				1347CD412DB5E3BF0034CA90 /* Sources */,
 				1347CD422DB5E3BF0034CA90 /* Frameworks */,
 				1347CD432DB5E3BF0034CA90 /* Resources */,
+				1303FFD42DD945A100962E3D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1303FFCE2DD945A100962E3D /* PBXTargetDependency */,
 			);
 			name = Possam;
 			packageProductDependencies = (
@@ -337,6 +461,9 @@
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					1303FFC52DD945A100962E3D = {
+						CreatedOnToolsVersion = 16.1;
+					};
 					1347CD442DB5E3BF0034CA90 = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -372,11 +499,19 @@
 				1347CD442DB5E3BF0034CA90 /* Possam */,
 				1347CD592DB5E3C10034CA90 /* PossamTests */,
 				1347CD632DB5E3C10034CA90 /* PossamUITests */,
+				1303FFC52DD945A100962E3D /* Inbox0IntentExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1303FFC42DD945A100962E3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1347CD432DB5E3BF0034CA90 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,6 +547,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1303FFC22DD945A100962E3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1347CD412DB5E3BF0034CA90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -433,7 +575,10 @@
 				1347CE142DC188AD0034CA90 /* ToolsView.swift in Sources */,
 				1347CE162DC188AD0034CA90 /* LoginView.swift in Sources */,
 				1303FFA52DD92DEA00962E3D /* AppColors.swift in Sources */,
+				1303FFAB2DD9339700962E3D /* StartMicIntentHandler.swift in Sources */,
+				1303FFB32DD9353A00962E3D /* SiriShortcutsView.swift in Sources */,
 				1347CE172DC188AD0034CA90 /* Models.swift in Sources */,
+				1303FFC02DD939DC00962E3D /* InboxSiriManager.swift in Sources */,
 				1347CE6E2DC1D6BA0034CA90 /* EmailVerificationView.swift in Sources */,
 				1347CE1B2DC188AD0034CA90 /* SignupView.swift in Sources */,
 				1347CE1C2DC188AD0034CA90 /* Views.swift in Sources */,
@@ -452,8 +597,10 @@
 				1347CE2A2DC188AD0034CA90 /* GoogleAuthManager.swift in Sources */,
 				1347CE2C2DC188AD0034CA90 /* PossamUITestsLaunchTests.swift in Sources */,
 				1347CE2F2DC188AD0034CA90 /* VapiViewModel.swift in Sources */,
+				1303FFBF2DD939DC00962E3D /* InboxSiriManager.swift in Sources */,
 				1347CE6C2DC1C5590034CA90 /* PossamApp.swift in Sources */,
 				1347CE312DC188AD0034CA90 /* ContentView.swift in Sources */,
+				1303FFAD2DD9339700962E3D /* StartMicIntentHandler.swift in Sources */,
 				1347CE332DC188AD0034CA90 /* WelcomeView.swift in Sources */,
 				1347CE342DC188AD0034CA90 /* SplashView.swift in Sources */,
 				1347CE362DC188AD0034CA90 /* ToolsView.swift in Sources */,
@@ -464,6 +611,7 @@
 				1347CE3C2DC188AD0034CA90 /* PossamTests.swift in Sources */,
 				1303FF992DD9269900962E3D /* PremiumButtonStyle.swift in Sources */,
 				1347CE3D2DC188AD0034CA90 /* SignupView.swift in Sources */,
+				1303FFB52DD9353A00962E3D /* SiriShortcutsView.swift in Sources */,
 				1347CE702DC1D6BA0034CA90 /* EmailVerificationView.swift in Sources */,
 				1347CE3E2DC188AD0034CA90 /* Views.swift in Sources */,
 				1303FFA82DD92E0C00962E3D /* ColorExtension.swift in Sources */,
@@ -483,8 +631,10 @@
 				1347CE462DC188AD0034CA90 /* GoogleAuthManager.swift in Sources */,
 				1347CE482DC188AD0034CA90 /* PossamUITestsLaunchTests.swift in Sources */,
 				1347CE4B2DC188AD0034CA90 /* VapiViewModel.swift in Sources */,
+				1303FFC12DD939DC00962E3D /* InboxSiriManager.swift in Sources */,
 				1347CE6A2DC1C5590034CA90 /* PossamApp.swift in Sources */,
 				1347CE4D2DC188AD0034CA90 /* ContentView.swift in Sources */,
+				1303FFAC2DD9339700962E3D /* StartMicIntentHandler.swift in Sources */,
 				1347CE4F2DC188AD0034CA90 /* WelcomeView.swift in Sources */,
 				1347CE502DC188AD0034CA90 /* SplashView.swift in Sources */,
 				1347CE522DC188AD0034CA90 /* ToolsView.swift in Sources */,
@@ -495,6 +645,7 @@
 				1347CE582DC188AD0034CA90 /* PossamTests.swift in Sources */,
 				1303FF982DD9269900962E3D /* PremiumButtonStyle.swift in Sources */,
 				1347CE592DC188AD0034CA90 /* SignupView.swift in Sources */,
+				1303FFB42DD9353A00962E3D /* SiriShortcutsView.swift in Sources */,
 				1347CE6F2DC1D6BA0034CA90 /* EmailVerificationView.swift in Sources */,
 				1347CE5A2DC188AD0034CA90 /* Views.swift in Sources */,
 				1303FFA92DD92E0C00962E3D /* ColorExtension.swift in Sources */,
@@ -505,6 +656,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1303FFCE2DD945A100962E3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1303FFC52DD945A100962E3D /* Inbox0IntentExtension */;
+			targetProxy = 1303FFCD2DD945A100962E3D /* PBXContainerItemProxy */;
+		};
 		1347CD5C2DB5E3C10034CA90 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1347CD442DB5E3BF0034CA90 /* Possam */;
@@ -518,6 +674,56 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1303FFD22DD945A100962E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JM3YZZR35Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Inbox0IntentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Inbox0IntentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.askPossam.Inbox0IntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1303FFD32DD945A100962E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JM3YZZR35Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Inbox0IntentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Inbox0IntentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.askPossam.Inbox0IntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		1347CD6C2DB5E3C10034CA90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -651,6 +857,9 @@
 				INFOPLIST_FILE = Possam/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Possam;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The microphone is used to hear your voice commands and questions";
+				INFOPLIST_KEY_NSSiriUsageDescription = "Use Siri to start the microphone and talk to your assistant without opening the app";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Speech recognition is used to transcribe your voice commands";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -684,6 +893,9 @@
 				INFOPLIST_FILE = Possam/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Possam;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The microphone is used to hear your voice commands and questions";
+				INFOPLIST_KEY_NSSiriUsageDescription = "Use Siri to start the microphone and talk to your assistant without opening the app";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Speech recognition is used to transcribe your voice commands";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -778,6 +990,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1303FFD12DD945A100962E3D /* Build configuration list for PBXNativeTarget "Inbox0IntentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1303FFD22DD945A100962E3D /* Debug */,
+				1303FFD32DD945A100962E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1347CD402DB5E3BF0034CA90 /* Build configuration list for PBXProject "Possam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -844,6 +1065,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1303FFDC2DD9499A00962E3D /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1347CDA22DB7FF120034CA90 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
 		1347CD792DB5E67A0034CA90 /* Vapi */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1347CD772DB5E4C00034CA90 /* XCRemoteSwiftPackageReference "ios" */;

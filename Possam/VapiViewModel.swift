@@ -8,6 +8,7 @@ class VapiViewModel: ObservableObject {
     private var vapi: Vapi?
     private var cancellables = Set<AnyCancellable>()
     private var audioLevelTimer: AnyCancellable?
+    private var siriObserver: NSObjectProtocol?
     
     // UI state
     @Published var isCallActive: Bool = false
@@ -21,6 +22,14 @@ class VapiViewModel: ObservableObject {
     init() {
         setupAudioLevelSimulation()
         setupVapiInstance()
+        setupSiriIntegration()
+    }
+    
+    deinit {
+        // Remove the Siri observer when this view model is deallocated
+        if let observer = siriObserver {
+            NotificationCenter.default.removeObserver(observer)
+        }
     }
     
     private func setupVapiInstance() {
@@ -29,6 +38,22 @@ class VapiViewModel: ObservableObject {
         
         // Set up event subscriptions
         setupEventPublisher()
+    }
+    
+    private func setupSiriIntegration() {
+        // Register for notifications when Siri requests to start the mic
+        siriObserver = NotificationCenter.default.addObserver(
+            forName: InboxSiriManager.siriStartMicNotificationName,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            guard let self = self else { return }
+            
+            // Only start if not already active
+            if !self.isCallActive {
+                self.startAssistant()
+            }
+        }
     }
     
     private func setupAudioLevelSimulation() {
@@ -94,7 +119,7 @@ class VapiViewModel: ObservableObject {
         Task {
             do {
                 try await vapi?.start(
-                  assistantId: "33c3ecd4-7808-45be-9935-fc23876a1ac8",
+                  assistantId: "85e3d8f8-5467-48ec-a8b9-8fc401947e3d",
                   metadata: [:]
                 )
             } catch {
