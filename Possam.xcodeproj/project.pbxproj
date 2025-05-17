@@ -1,0 +1,899 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1347CD7A2DB5E67A0034CA90 /* Vapi in Frameworks */ = {isa = PBXBuildFile; productRef = 1347CD792DB5E67A0034CA90 /* Vapi */; };
+		1347CD9F2DB7FD480034CA90 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 1347CD9E2DB7FD480034CA90 /* Auth */; };
+		1347CDA12DB7FEC90034CA90 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1347CDA02DB7FEC90034CA90 /* Supabase */; };
+		1347CDA42DB7FF120034CA90 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 1347CDA32DB7FF120034CA90 /* GoogleSignIn */; };
+		1347CDA62DB7FF120034CA90 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1347CDA52DB7FF120034CA90 /* GoogleSignInSwift */; };
+		1347CE042DC188AD0034CA90 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE12DC188AD0034CA90 /* AuthenticationViewModel.swift */; };
+		1347CE052DC188AD0034CA90 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF02DC188AD0034CA90 /* Persistence.swift */; };
+		1347CE062DC188AD0034CA90 /* SupabaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF52DC188AD0034CA90 /* SupabaseAuthManager.swift */; };
+		1347CE072DC188AD0034CA90 /* PossamCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF12DC188AD0034CA90 /* PossamCharacterView.swift */; };
+		1347CE082DC188AD0034CA90 /* GoogleAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE82DC188AD0034CA90 /* GoogleAuthManager.swift */; };
+		1347CE092DC188AD0034CA90 /* CloudVisualizationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE42DC188AD0034CA90 /* CloudVisualizationViews.swift */; };
+		1347CE0B2DC188AD0034CA90 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF72DC188AD0034CA90 /* Triangle.swift */; };
+		1347CE0D2DC188AD0034CA90 /* VapiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF82DC188AD0034CA90 /* VapiViewModel.swift */; };
+		1347CE0F2DC188AD0034CA90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE62DC188AD0034CA90 /* ContentView.swift */; };
+		1347CE102DC188AD0034CA90 /* HapticFeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE92DC188AD0034CA90 /* HapticFeedbackManager.swift */; };
+		1347CE112DC188AD0034CA90 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDFA2DC188AD0034CA90 /* WelcomeView.swift */; };
+		1347CE122DC188AD0034CA90 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF42DC188AD0034CA90 /* SplashView.swift */; };
+		1347CE142DC188AD0034CA90 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF62DC188AD0034CA90 /* ToolsView.swift */; };
+		1347CE162DC188AD0034CA90 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDEC2DC188AD0034CA90 /* LoginView.swift */; };
+		1347CE172DC188AD0034CA90 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDED2DC188AD0034CA90 /* Models.swift */; };
+		1347CE182DC188AD0034CA90 /* EyeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE72DC188AD0034CA90 /* EyeView.swift */; };
+		1347CE192DC188AD0034CA90 /* CharacterBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE22DC188AD0034CA90 /* CharacterBodyView.swift */; };
+		1347CE1B2DC188AD0034CA90 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF32DC188AD0034CA90 /* SignupView.swift */; };
+		1347CE1C2DC188AD0034CA90 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF92DC188AD0034CA90 /* Views.swift */; };
+		1347CE1E2DC188AD0034CA90 /* ParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDEF2DC188AD0034CA90 /* ParticleSystem.swift */; };
+		1347CE202DC188AD0034CA90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1347CDE02DC188AD0034CA90 /* Assets.xcassets */; };
+		1347CE222DC188AD0034CA90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1347CDDE2DC188AD0034CA90 /* Preview Assets.xcassets */; };
+		1347CE232DC188AD0034CA90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1347CDE02DC188AD0034CA90 /* Assets.xcassets */; };
+		1347CE242DC188AD0034CA90 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1347CDEB2DC188AD0034CA90 /* Info.plist */; };
+		1347CE252DC188AD0034CA90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1347CDDE2DC188AD0034CA90 /* Preview Assets.xcassets */; };
+		1347CE262DC188AD0034CA90 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE12DC188AD0034CA90 /* AuthenticationViewModel.swift */; };
+		1347CE272DC188AD0034CA90 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF02DC188AD0034CA90 /* Persistence.swift */; };
+		1347CE282DC188AD0034CA90 /* SupabaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF52DC188AD0034CA90 /* SupabaseAuthManager.swift */; };
+		1347CE292DC188AD0034CA90 /* PossamCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF12DC188AD0034CA90 /* PossamCharacterView.swift */; };
+		1347CE2A2DC188AD0034CA90 /* GoogleAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE82DC188AD0034CA90 /* GoogleAuthManager.swift */; };
+		1347CE2B2DC188AD0034CA90 /* CloudVisualizationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE42DC188AD0034CA90 /* CloudVisualizationViews.swift */; };
+		1347CE2C2DC188AD0034CA90 /* PossamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE002DC188AD0034CA90 /* PossamUITestsLaunchTests.swift */; };
+		1347CE2D2DC188AD0034CA90 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF72DC188AD0034CA90 /* Triangle.swift */; };
+		1347CE2F2DC188AD0034CA90 /* VapiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF82DC188AD0034CA90 /* VapiViewModel.swift */; };
+		1347CE312DC188AD0034CA90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE62DC188AD0034CA90 /* ContentView.swift */; };
+		1347CE322DC188AD0034CA90 /* HapticFeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE92DC188AD0034CA90 /* HapticFeedbackManager.swift */; };
+		1347CE332DC188AD0034CA90 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDFA2DC188AD0034CA90 /* WelcomeView.swift */; };
+		1347CE342DC188AD0034CA90 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF42DC188AD0034CA90 /* SplashView.swift */; };
+		1347CE362DC188AD0034CA90 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF62DC188AD0034CA90 /* ToolsView.swift */; };
+		1347CE382DC188AD0034CA90 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDEC2DC188AD0034CA90 /* LoginView.swift */; };
+		1347CE392DC188AD0034CA90 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDED2DC188AD0034CA90 /* Models.swift */; };
+		1347CE3A2DC188AD0034CA90 /* EyeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE72DC188AD0034CA90 /* EyeView.swift */; };
+		1347CE3B2DC188AD0034CA90 /* CharacterBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE22DC188AD0034CA90 /* CharacterBodyView.swift */; };
+		1347CE3C2DC188AD0034CA90 /* PossamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDFD2DC188AD0034CA90 /* PossamTests.swift */; };
+		1347CE3D2DC188AD0034CA90 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF32DC188AD0034CA90 /* SignupView.swift */; };
+		1347CE3E2DC188AD0034CA90 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF92DC188AD0034CA90 /* Views.swift */; };
+		1347CE3F2DC188AD0034CA90 /* PossamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDFF2DC188AD0034CA90 /* PossamUITests.swift */; };
+		1347CE402DC188AD0034CA90 /* ParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDEF2DC188AD0034CA90 /* ParticleSystem.swift */; };
+		1347CE422DC188AD0034CA90 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE12DC188AD0034CA90 /* AuthenticationViewModel.swift */; };
+		1347CE432DC188AD0034CA90 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF02DC188AD0034CA90 /* Persistence.swift */; };
+		1347CE442DC188AD0034CA90 /* SupabaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF52DC188AD0034CA90 /* SupabaseAuthManager.swift */; };
+		1347CE452DC188AD0034CA90 /* PossamCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF12DC188AD0034CA90 /* PossamCharacterView.swift */; };
+		1347CE462DC188AD0034CA90 /* GoogleAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE82DC188AD0034CA90 /* GoogleAuthManager.swift */; };
+		1347CE472DC188AD0034CA90 /* CloudVisualizationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE42DC188AD0034CA90 /* CloudVisualizationViews.swift */; };
+		1347CE482DC188AD0034CA90 /* PossamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE002DC188AD0034CA90 /* PossamUITestsLaunchTests.swift */; };
+		1347CE492DC188AD0034CA90 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF72DC188AD0034CA90 /* Triangle.swift */; };
+		1347CE4B2DC188AD0034CA90 /* VapiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF82DC188AD0034CA90 /* VapiViewModel.swift */; };
+		1347CE4D2DC188AD0034CA90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE62DC188AD0034CA90 /* ContentView.swift */; };
+		1347CE4E2DC188AD0034CA90 /* HapticFeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE92DC188AD0034CA90 /* HapticFeedbackManager.swift */; };
+		1347CE4F2DC188AD0034CA90 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDFA2DC188AD0034CA90 /* WelcomeView.swift */; };
+		1347CE502DC188AD0034CA90 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF42DC188AD0034CA90 /* SplashView.swift */; };
+		1347CE522DC188AD0034CA90 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF62DC188AD0034CA90 /* ToolsView.swift */; };
+		1347CE542DC188AD0034CA90 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDEC2DC188AD0034CA90 /* LoginView.swift */; };
+		1347CE552DC188AD0034CA90 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDED2DC188AD0034CA90 /* Models.swift */; };
+		1347CE562DC188AD0034CA90 /* EyeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE72DC188AD0034CA90 /* EyeView.swift */; };
+		1347CE572DC188AD0034CA90 /* CharacterBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE22DC188AD0034CA90 /* CharacterBodyView.swift */; };
+		1347CE582DC188AD0034CA90 /* PossamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDFD2DC188AD0034CA90 /* PossamTests.swift */; };
+		1347CE592DC188AD0034CA90 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF32DC188AD0034CA90 /* SignupView.swift */; };
+		1347CE5A2DC188AD0034CA90 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF92DC188AD0034CA90 /* Views.swift */; };
+		1347CE5B2DC188AD0034CA90 /* PossamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDFF2DC188AD0034CA90 /* PossamUITests.swift */; };
+		1347CE5C2DC188AD0034CA90 /* ParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDEF2DC188AD0034CA90 /* ParticleSystem.swift */; };
+		1347CE5E2DC188AD0034CA90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1347CDE02DC188AD0034CA90 /* Assets.xcassets */; };
+		1347CE5F2DC188AD0034CA90 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1347CDEB2DC188AD0034CA90 /* Info.plist */; };
+		1347CE602DC188AD0034CA90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1347CDDE2DC188AD0034CA90 /* Preview Assets.xcassets */; };
+		1347CE622DC1BF890034CA90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE612DC1BF890034CA90 /* AppDelegate.swift */; };
+		1347CE632DC1BF890034CA90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE612DC1BF890034CA90 /* AppDelegate.swift */; };
+		1347CE642DC1BF890034CA90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE612DC1BF890034CA90 /* AppDelegate.swift */; };
+		1347CE662DC1C44B0034CA90 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE652DC1C44B0034CA90 /* AppCoordinator.swift */; };
+		1347CE672DC1C44B0034CA90 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE652DC1C44B0034CA90 /* AppCoordinator.swift */; };
+		1347CE682DC1C44B0034CA90 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE652DC1C44B0034CA90 /* AppCoordinator.swift */; };
+		1347CE6A2DC1C5590034CA90 /* PossamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE692DC1C5590034CA90 /* PossamApp.swift */; };
+		1347CE6B2DC1C5590034CA90 /* PossamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE692DC1C5590034CA90 /* PossamApp.swift */; };
+		1347CE6C2DC1C5590034CA90 /* PossamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE692DC1C5590034CA90 /* PossamApp.swift */; };
+		1347CE6E2DC1D6BA0034CA90 /* EmailVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE6D2DC1D6BA0034CA90 /* EmailVerificationView.swift */; };
+		1347CE6F2DC1D6BA0034CA90 /* EmailVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE6D2DC1D6BA0034CA90 /* EmailVerificationView.swift */; };
+		1347CE702DC1D6BA0034CA90 /* EmailVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE6D2DC1D6BA0034CA90 /* EmailVerificationView.swift */; };
+		1347CE722DC56C540034CA90 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE712DC56C540034CA90 /* SettingsView.swift */; };
+		1347CE732DC56C540034CA90 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE712DC56C540034CA90 /* SettingsView.swift */; };
+		1347CE742DC56C540034CA90 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE712DC56C540034CA90 /* SettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1347CD5B2DB5E3C10034CA90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1347CD3D2DB5E3BF0034CA90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1347CD442DB5E3BF0034CA90;
+			remoteInfo = AskNeha;
+		};
+		1347CD652DB5E3C10034CA90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1347CD3D2DB5E3BF0034CA90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1347CD442DB5E3BF0034CA90;
+			remoteInfo = AskNeha;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1347CD452DB5E3BF0034CA90 /* Possam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Possam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1347CD5A2DB5E3C10034CA90 /* PossamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PossamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1347CD642DB5E3C10034CA90 /* PossamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PossamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1347CDDE2DC188AD0034CA90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1347CDE02DC188AD0034CA90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1347CDE12DC188AD0034CA90 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		1347CDE22DC188AD0034CA90 /* CharacterBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBodyView.swift; sourceTree = "<group>"; };
+		1347CDE42DC188AD0034CA90 /* CloudVisualizationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudVisualizationViews.swift; sourceTree = "<group>"; };
+		1347CDE62DC188AD0034CA90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1347CDE72DC188AD0034CA90 /* EyeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeView.swift; sourceTree = "<group>"; };
+		1347CDE82DC188AD0034CA90 /* GoogleAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthManager.swift; sourceTree = "<group>"; };
+		1347CDE92DC188AD0034CA90 /* HapticFeedbackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackManager.swift; sourceTree = "<group>"; };
+		1347CDEB2DC188AD0034CA90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1347CDEC2DC188AD0034CA90 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1347CDED2DC188AD0034CA90 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		1347CDEF2DC188AD0034CA90 /* ParticleSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleSystem.swift; sourceTree = "<group>"; };
+		1347CDF02DC188AD0034CA90 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		1347CDF12DC188AD0034CA90 /* PossamCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossamCharacterView.swift; sourceTree = "<group>"; };
+		1347CDF32DC188AD0034CA90 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		1347CDF42DC188AD0034CA90 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		1347CDF52DC188AD0034CA90 /* SupabaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseAuthManager.swift; sourceTree = "<group>"; };
+		1347CDF62DC188AD0034CA90 /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
+		1347CDF72DC188AD0034CA90 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		1347CDF82DC188AD0034CA90 /* VapiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VapiViewModel.swift; sourceTree = "<group>"; };
+		1347CDF92DC188AD0034CA90 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		1347CDFA2DC188AD0034CA90 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		1347CDFD2DC188AD0034CA90 /* PossamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossamTests.swift; sourceTree = "<group>"; };
+		1347CDFF2DC188AD0034CA90 /* PossamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossamUITests.swift; sourceTree = "<group>"; };
+		1347CE002DC188AD0034CA90 /* PossamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1347CE612DC1BF890034CA90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1347CE652DC1C44B0034CA90 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		1347CE692DC1C5590034CA90 /* PossamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossamApp.swift; sourceTree = "<group>"; };
+		1347CE6D2DC1D6BA0034CA90 /* EmailVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVerificationView.swift; sourceTree = "<group>"; };
+		1347CE712DC56C540034CA90 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1347CD422DB5E3BF0034CA90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1347CDA62DB7FF120034CA90 /* GoogleSignInSwift in Frameworks */,
+				1347CD9F2DB7FD480034CA90 /* Auth in Frameworks */,
+				1347CDA42DB7FF120034CA90 /* GoogleSignIn in Frameworks */,
+				1347CD7A2DB5E67A0034CA90 /* Vapi in Frameworks */,
+				1347CDA12DB7FEC90034CA90 /* Supabase in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1347CD572DB5E3C10034CA90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1347CD612DB5E3C10034CA90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1347CD3C2DB5E3BF0034CA90 = {
+			isa = PBXGroup;
+			children = (
+				1347CDFB2DC188AD0034CA90 /* Possam */,
+				1347CDFE2DC188AD0034CA90 /* PossamTests */,
+				1347CE012DC188AD0034CA90 /* PossamUITests */,
+				1347CD782DB5E67A0034CA90 /* Frameworks */,
+				1347CD462DB5E3BF0034CA90 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1347CD462DB5E3BF0034CA90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1347CD452DB5E3BF0034CA90 /* Possam.app */,
+				1347CD5A2DB5E3C10034CA90 /* PossamTests.xctest */,
+				1347CD642DB5E3C10034CA90 /* PossamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1347CD782DB5E67A0034CA90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1347CDDF2DC188AD0034CA90 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1347CDDE2DC188AD0034CA90 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1347CDFB2DC188AD0034CA90 /* Possam */ = {
+			isa = PBXGroup;
+			children = (
+				1347CDDF2DC188AD0034CA90 /* Preview Content */,
+				1347CDE02DC188AD0034CA90 /* Assets.xcassets */,
+				1347CDE12DC188AD0034CA90 /* AuthenticationViewModel.swift */,
+				1347CDE22DC188AD0034CA90 /* CharacterBodyView.swift */,
+				1347CDE42DC188AD0034CA90 /* CloudVisualizationViews.swift */,
+				1347CDE62DC188AD0034CA90 /* ContentView.swift */,
+				1347CE612DC1BF890034CA90 /* AppDelegate.swift */,
+				1347CDE72DC188AD0034CA90 /* EyeView.swift */,
+				1347CDE82DC188AD0034CA90 /* GoogleAuthManager.swift */,
+				1347CDE92DC188AD0034CA90 /* HapticFeedbackManager.swift */,
+				1347CE712DC56C540034CA90 /* SettingsView.swift */,
+				1347CDEB2DC188AD0034CA90 /* Info.plist */,
+				1347CDEC2DC188AD0034CA90 /* LoginView.swift */,
+				1347CDED2DC188AD0034CA90 /* Models.swift */,
+				1347CE652DC1C44B0034CA90 /* AppCoordinator.swift */,
+				1347CE6D2DC1D6BA0034CA90 /* EmailVerificationView.swift */,
+				1347CDEF2DC188AD0034CA90 /* ParticleSystem.swift */,
+				1347CDF02DC188AD0034CA90 /* Persistence.swift */,
+				1347CDF12DC188AD0034CA90 /* PossamCharacterView.swift */,
+				1347CDF32DC188AD0034CA90 /* SignupView.swift */,
+				1347CDF42DC188AD0034CA90 /* SplashView.swift */,
+				1347CE692DC1C5590034CA90 /* PossamApp.swift */,
+				1347CDF52DC188AD0034CA90 /* SupabaseAuthManager.swift */,
+				1347CDF62DC188AD0034CA90 /* ToolsView.swift */,
+				1347CDF72DC188AD0034CA90 /* Triangle.swift */,
+				1347CDF82DC188AD0034CA90 /* VapiViewModel.swift */,
+				1347CDF92DC188AD0034CA90 /* Views.swift */,
+				1347CDFA2DC188AD0034CA90 /* WelcomeView.swift */,
+			);
+			path = Possam;
+			sourceTree = "<group>";
+		};
+		1347CDFE2DC188AD0034CA90 /* PossamTests */ = {
+			isa = PBXGroup;
+			children = (
+				1347CDFD2DC188AD0034CA90 /* PossamTests.swift */,
+			);
+			path = PossamTests;
+			sourceTree = "<group>";
+		};
+		1347CE012DC188AD0034CA90 /* PossamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1347CDFF2DC188AD0034CA90 /* PossamUITests.swift */,
+				1347CE002DC188AD0034CA90 /* PossamUITestsLaunchTests.swift */,
+			);
+			path = PossamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1347CD442DB5E3BF0034CA90 /* Possam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1347CD6E2DB5E3C10034CA90 /* Build configuration list for PBXNativeTarget "Possam" */;
+			buildPhases = (
+				1347CD412DB5E3BF0034CA90 /* Sources */,
+				1347CD422DB5E3BF0034CA90 /* Frameworks */,
+				1347CD432DB5E3BF0034CA90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Possam;
+			packageProductDependencies = (
+				1347CD792DB5E67A0034CA90 /* Vapi */,
+				1347CD9E2DB7FD480034CA90 /* Auth */,
+				1347CDA02DB7FEC90034CA90 /* Supabase */,
+				1347CDA32DB7FF120034CA90 /* GoogleSignIn */,
+				1347CDA52DB7FF120034CA90 /* GoogleSignInSwift */,
+			);
+			productName = AskNeha;
+			productReference = 1347CD452DB5E3BF0034CA90 /* Possam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1347CD592DB5E3C10034CA90 /* PossamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1347CD712DB5E3C10034CA90 /* Build configuration list for PBXNativeTarget "PossamTests" */;
+			buildPhases = (
+				1347CD562DB5E3C10034CA90 /* Sources */,
+				1347CD572DB5E3C10034CA90 /* Frameworks */,
+				1347CD582DB5E3C10034CA90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1347CD5C2DB5E3C10034CA90 /* PBXTargetDependency */,
+			);
+			name = PossamTests;
+			packageProductDependencies = (
+			);
+			productName = AskNehaTests;
+			productReference = 1347CD5A2DB5E3C10034CA90 /* PossamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1347CD632DB5E3C10034CA90 /* PossamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1347CD742DB5E3C10034CA90 /* Build configuration list for PBXNativeTarget "PossamUITests" */;
+			buildPhases = (
+				1347CD602DB5E3C10034CA90 /* Sources */,
+				1347CD612DB5E3C10034CA90 /* Frameworks */,
+				1347CD622DB5E3C10034CA90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1347CD662DB5E3C10034CA90 /* PBXTargetDependency */,
+			);
+			name = PossamUITests;
+			packageProductDependencies = (
+			);
+			productName = AskNehaUITests;
+			productReference = 1347CD642DB5E3C10034CA90 /* PossamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1347CD3D2DB5E3BF0034CA90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					1347CD442DB5E3BF0034CA90 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					1347CD592DB5E3C10034CA90 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 1347CD442DB5E3BF0034CA90;
+					};
+					1347CD632DB5E3C10034CA90 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 1347CD442DB5E3BF0034CA90;
+					};
+				};
+			};
+			buildConfigurationList = 1347CD402DB5E3BF0034CA90 /* Build configuration list for PBXProject "Possam" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1347CD3C2DB5E3BF0034CA90;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1347CD772DB5E4C00034CA90 /* XCRemoteSwiftPackageReference "ios" */,
+				1347CD9D2DB7FD480034CA90 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				1347CDA22DB7FF120034CA90 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1347CD462DB5E3BF0034CA90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1347CD442DB5E3BF0034CA90 /* Possam */,
+				1347CD592DB5E3C10034CA90 /* PossamTests */,
+				1347CD632DB5E3C10034CA90 /* PossamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1347CD432DB5E3BF0034CA90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1347CE202DC188AD0034CA90 /* Assets.xcassets in Resources */,
+				1347CE222DC188AD0034CA90 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1347CD582DB5E3C10034CA90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1347CE232DC188AD0034CA90 /* Assets.xcassets in Resources */,
+				1347CE242DC188AD0034CA90 /* Info.plist in Resources */,
+				1347CE252DC188AD0034CA90 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1347CD622DB5E3C10034CA90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1347CE5E2DC188AD0034CA90 /* Assets.xcassets in Resources */,
+				1347CE5F2DC188AD0034CA90 /* Info.plist in Resources */,
+				1347CE602DC188AD0034CA90 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1347CD412DB5E3BF0034CA90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1347CE042DC188AD0034CA90 /* AuthenticationViewModel.swift in Sources */,
+				1347CE052DC188AD0034CA90 /* Persistence.swift in Sources */,
+				1347CE062DC188AD0034CA90 /* SupabaseAuthManager.swift in Sources */,
+				1347CE682DC1C44B0034CA90 /* AppCoordinator.swift in Sources */,
+				1347CE072DC188AD0034CA90 /* PossamCharacterView.swift in Sources */,
+				1347CE082DC188AD0034CA90 /* GoogleAuthManager.swift in Sources */,
+				1347CE092DC188AD0034CA90 /* CloudVisualizationViews.swift in Sources */,
+				1347CE0B2DC188AD0034CA90 /* Triangle.swift in Sources */,
+				1347CE622DC1BF890034CA90 /* AppDelegate.swift in Sources */,
+				1347CE6B2DC1C5590034CA90 /* PossamApp.swift in Sources */,
+				1347CE0D2DC188AD0034CA90 /* VapiViewModel.swift in Sources */,
+				1347CE0F2DC188AD0034CA90 /* ContentView.swift in Sources */,
+				1347CE102DC188AD0034CA90 /* HapticFeedbackManager.swift in Sources */,
+				1347CE112DC188AD0034CA90 /* WelcomeView.swift in Sources */,
+				1347CE122DC188AD0034CA90 /* SplashView.swift in Sources */,
+				1347CE722DC56C540034CA90 /* SettingsView.swift in Sources */,
+				1347CE142DC188AD0034CA90 /* ToolsView.swift in Sources */,
+				1347CE162DC188AD0034CA90 /* LoginView.swift in Sources */,
+				1347CE172DC188AD0034CA90 /* Models.swift in Sources */,
+				1347CE182DC188AD0034CA90 /* EyeView.swift in Sources */,
+				1347CE192DC188AD0034CA90 /* CharacterBodyView.swift in Sources */,
+				1347CE6E2DC1D6BA0034CA90 /* EmailVerificationView.swift in Sources */,
+				1347CE1B2DC188AD0034CA90 /* SignupView.swift in Sources */,
+				1347CE1C2DC188AD0034CA90 /* Views.swift in Sources */,
+				1347CE1E2DC188AD0034CA90 /* ParticleSystem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1347CD562DB5E3C10034CA90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1347CE262DC188AD0034CA90 /* AuthenticationViewModel.swift in Sources */,
+				1347CE272DC188AD0034CA90 /* Persistence.swift in Sources */,
+				1347CE282DC188AD0034CA90 /* SupabaseAuthManager.swift in Sources */,
+				1347CE292DC188AD0034CA90 /* PossamCharacterView.swift in Sources */,
+				1347CE642DC1BF890034CA90 /* AppDelegate.swift in Sources */,
+				1347CE2A2DC188AD0034CA90 /* GoogleAuthManager.swift in Sources */,
+				1347CE2B2DC188AD0034CA90 /* CloudVisualizationViews.swift in Sources */,
+				1347CE2C2DC188AD0034CA90 /* PossamUITestsLaunchTests.swift in Sources */,
+				1347CE2D2DC188AD0034CA90 /* Triangle.swift in Sources */,
+				1347CE2F2DC188AD0034CA90 /* VapiViewModel.swift in Sources */,
+				1347CE6C2DC1C5590034CA90 /* PossamApp.swift in Sources */,
+				1347CE312DC188AD0034CA90 /* ContentView.swift in Sources */,
+				1347CE322DC188AD0034CA90 /* HapticFeedbackManager.swift in Sources */,
+				1347CE332DC188AD0034CA90 /* WelcomeView.swift in Sources */,
+				1347CE342DC188AD0034CA90 /* SplashView.swift in Sources */,
+				1347CE362DC188AD0034CA90 /* ToolsView.swift in Sources */,
+				1347CE382DC188AD0034CA90 /* LoginView.swift in Sources */,
+				1347CE392DC188AD0034CA90 /* Models.swift in Sources */,
+				1347CE672DC1C44B0034CA90 /* AppCoordinator.swift in Sources */,
+				1347CE3A2DC188AD0034CA90 /* EyeView.swift in Sources */,
+				1347CE3B2DC188AD0034CA90 /* CharacterBodyView.swift in Sources */,
+				1347CE732DC56C540034CA90 /* SettingsView.swift in Sources */,
+				1347CE3C2DC188AD0034CA90 /* PossamTests.swift in Sources */,
+				1347CE3D2DC188AD0034CA90 /* SignupView.swift in Sources */,
+				1347CE702DC1D6BA0034CA90 /* EmailVerificationView.swift in Sources */,
+				1347CE3E2DC188AD0034CA90 /* Views.swift in Sources */,
+				1347CE3F2DC188AD0034CA90 /* PossamUITests.swift in Sources */,
+				1347CE402DC188AD0034CA90 /* ParticleSystem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1347CD602DB5E3C10034CA90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1347CE422DC188AD0034CA90 /* AuthenticationViewModel.swift in Sources */,
+				1347CE432DC188AD0034CA90 /* Persistence.swift in Sources */,
+				1347CE442DC188AD0034CA90 /* SupabaseAuthManager.swift in Sources */,
+				1347CE452DC188AD0034CA90 /* PossamCharacterView.swift in Sources */,
+				1347CE632DC1BF890034CA90 /* AppDelegate.swift in Sources */,
+				1347CE462DC188AD0034CA90 /* GoogleAuthManager.swift in Sources */,
+				1347CE472DC188AD0034CA90 /* CloudVisualizationViews.swift in Sources */,
+				1347CE482DC188AD0034CA90 /* PossamUITestsLaunchTests.swift in Sources */,
+				1347CE492DC188AD0034CA90 /* Triangle.swift in Sources */,
+				1347CE4B2DC188AD0034CA90 /* VapiViewModel.swift in Sources */,
+				1347CE6A2DC1C5590034CA90 /* PossamApp.swift in Sources */,
+				1347CE4D2DC188AD0034CA90 /* ContentView.swift in Sources */,
+				1347CE4E2DC188AD0034CA90 /* HapticFeedbackManager.swift in Sources */,
+				1347CE4F2DC188AD0034CA90 /* WelcomeView.swift in Sources */,
+				1347CE502DC188AD0034CA90 /* SplashView.swift in Sources */,
+				1347CE522DC188AD0034CA90 /* ToolsView.swift in Sources */,
+				1347CE542DC188AD0034CA90 /* LoginView.swift in Sources */,
+				1347CE552DC188AD0034CA90 /* Models.swift in Sources */,
+				1347CE662DC1C44B0034CA90 /* AppCoordinator.swift in Sources */,
+				1347CE562DC188AD0034CA90 /* EyeView.swift in Sources */,
+				1347CE572DC188AD0034CA90 /* CharacterBodyView.swift in Sources */,
+				1347CE742DC56C540034CA90 /* SettingsView.swift in Sources */,
+				1347CE582DC188AD0034CA90 /* PossamTests.swift in Sources */,
+				1347CE592DC188AD0034CA90 /* SignupView.swift in Sources */,
+				1347CE6F2DC1D6BA0034CA90 /* EmailVerificationView.swift in Sources */,
+				1347CE5A2DC188AD0034CA90 /* Views.swift in Sources */,
+				1347CE5B2DC188AD0034CA90 /* PossamUITests.swift in Sources */,
+				1347CE5C2DC188AD0034CA90 /* ParticleSystem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1347CD5C2DB5E3C10034CA90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1347CD442DB5E3BF0034CA90 /* Possam */;
+			targetProxy = 1347CD5B2DB5E3C10034CA90 /* PBXContainerItemProxy */;
+		};
+		1347CD662DB5E3C10034CA90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1347CD442DB5E3BF0034CA90 /* Possam */;
+			targetProxy = 1347CD652DB5E3C10034CA90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1347CD6C2DB5E3C10034CA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1347CD6D2DB5E3C10034CA90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1347CD6F2DB5E3C10034CA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = JM3YZZR35Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Possam/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Possam;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.askPossam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1347CD702DB5E3C10034CA90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = JM3YZZR35Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Possam/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Possam;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.askPossam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1347CD722DB5E3C10034CA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JM3YZZR35Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AskNehaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AskNeha.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AskNeha";
+			};
+			name = Debug;
+		};
+		1347CD732DB5E3C10034CA90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JM3YZZR35Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AskNehaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AskNeha.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AskNeha";
+			};
+			name = Release;
+		};
+		1347CD752DB5E3C10034CA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JM3YZZR35Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AskNehaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AskNeha;
+			};
+			name = Debug;
+		};
+		1347CD762DB5E3C10034CA90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JM3YZZR35Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AskNehaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AskNeha;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1347CD402DB5E3BF0034CA90 /* Build configuration list for PBXProject "Possam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1347CD6C2DB5E3C10034CA90 /* Debug */,
+				1347CD6D2DB5E3C10034CA90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1347CD6E2DB5E3C10034CA90 /* Build configuration list for PBXNativeTarget "Possam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1347CD6F2DB5E3C10034CA90 /* Debug */,
+				1347CD702DB5E3C10034CA90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1347CD712DB5E3C10034CA90 /* Build configuration list for PBXNativeTarget "PossamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1347CD722DB5E3C10034CA90 /* Debug */,
+				1347CD732DB5E3C10034CA90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1347CD742DB5E3C10034CA90 /* Build configuration list for PBXNativeTarget "PossamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1347CD752DB5E3C10034CA90 /* Debug */,
+				1347CD762DB5E3C10034CA90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1347CD772DB5E4C00034CA90 /* XCRemoteSwiftPackageReference "ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/VapiAI/ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		1347CD9D2DB7FD480034CA90 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+		1347CDA22DB7FF120034CA90 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1347CD792DB5E67A0034CA90 /* Vapi */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1347CD772DB5E4C00034CA90 /* XCRemoteSwiftPackageReference "ios" */;
+			productName = Vapi;
+		};
+		1347CD9E2DB7FD480034CA90 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1347CD9D2DB7FD480034CA90 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		1347CDA02DB7FEC90034CA90 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1347CD9D2DB7FD480034CA90 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+		1347CDA32DB7FF120034CA90 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1347CDA22DB7FF120034CA90 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		1347CDA52DB7FF120034CA90 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1347CDA22DB7FF120034CA90 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1347CD3D2DB5E3BF0034CA90 /* Project object */;
+}
