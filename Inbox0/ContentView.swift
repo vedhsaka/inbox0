@@ -207,6 +207,19 @@ struct ContentView: View {
                     ZStack {
                         Color.white
                             .edgesIgnoringSafeArea(.all)
+                            .onAppear {
+                                // Start animations
+                                withAnimation(Animation.easeInOut(duration: 1.5).repeatForever(autoreverses: true)) {
+                                    pulseAnimation = true
+                                }
+                                updateWaveAmplitude()
+                                
+                                // Automatically start the assistant when the view appears
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                    updateStatus("Connecting...")
+                                    vapiViewModel.startAssistant()
+                                }
+                            }
                             .shadow(color: Color.black.opacity(0.15), radius: 15, x: 5, y: 0)
                     
                         SettingsView(showSideMenu: $showSideMenu)
@@ -305,13 +318,19 @@ struct ContentView: View {
         }
     }
 
-    // Handle app state changes
+    // Update the handleScenePhaseChange function
     private func handleScenePhaseChange(_ newPhase: ScenePhase) {
         switch newPhase {
         case .active:
             // App is active (foreground)
             print("App became active")
-            if vapiViewModel.isCallActive {
+            // When app becomes active, start the assistant if it's not already running
+            if !vapiViewModel.isCallActive {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    updateStatus("Connecting...")
+                    vapiViewModel.startAssistant()
+                }
+            } else if vapiViewModel.isCallActive {
                 // Reactivate audio session if needed
                 activateAudioSession()
             }

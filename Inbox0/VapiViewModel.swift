@@ -18,9 +18,26 @@ class VapiViewModel: ObservableObject {
     @Published var isConnecting: Bool = false
     @Published var isReady: Bool = false
     
+    // In VapiViewModel.swift, update the init() function
     init() {
         setupAudioLevelSimulation()
         setupVapiInstance()
+        
+        // Set up a timer to auto-reconnect if the connection drops
+        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { [weak self] _ in
+            guard let self = self else { return }
+            if !self.isCallActive && !self.isConnecting && UIApplication.shared.applicationState == .active {
+                print("Auto-reconnecting Vapi assistant")
+                self.startAssistant()
+            }
+        }
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(handleAppBecomeActive),
+            name: Notification.Name("AppDidBecomeActive"),
+            object: nil
+        )
     }
     
     private func setupVapiInstance() {
@@ -185,6 +202,14 @@ class VapiViewModel: ObservableObject {
                         self.isCallActive = false
                     }
                 }
+            }
+        }
+    }
+    
+    @objc private func handleAppBecomeActive() {
+        if !isCallActive && !isConnecting {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                self.startAssistant()
             }
         }
     }

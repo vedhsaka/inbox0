@@ -132,4 +132,12 @@ class AppDelegate: NSObject, UIApplicationDelegate {
             break
         }
     }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        // Ensure audio session is active when app becomes active
+        activateAudioSession()
+        
+        // Notify the view model to start the assistant if it's not already running
+        NotificationCenter.default.post(name: Notification.Name("AppDidBecomeActive"), object: nil)
+    }
 }

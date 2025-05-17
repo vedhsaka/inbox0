@@ -83,9 +83,9 @@
 		1347CE662DC1C44B0034CA90 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE652DC1C44B0034CA90 /* AppCoordinator.swift */; };
 		1347CE672DC1C44B0034CA90 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE652DC1C44B0034CA90 /* AppCoordinator.swift */; };
 		1347CE682DC1C44B0034CA90 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE652DC1C44B0034CA90 /* AppCoordinator.swift */; };
-		1347CE6A2DC1C5590034CA90 /* PossamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE692DC1C5590034CA90 /* PossamApp.swift */; };
-		1347CE6B2DC1C5590034CA90 /* PossamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE692DC1C5590034CA90 /* PossamApp.swift */; };
-		1347CE6C2DC1C5590034CA90 /* PossamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE692DC1C5590034CA90 /* PossamApp.swift */; };
+		1347CE6A2DC1C5590034CA90 /* Inbox0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE692DC1C5590034CA90 /* Inbox0App.swift */; };
+		1347CE6B2DC1C5590034CA90 /* Inbox0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE692DC1C5590034CA90 /* Inbox0App.swift */; };
+		1347CE6C2DC1C5590034CA90 /* Inbox0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE692DC1C5590034CA90 /* Inbox0App.swift */; };
 		1347CE6E2DC1D6BA0034CA90 /* EmailVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE6D2DC1D6BA0034CA90 /* EmailVerificationView.swift */; };
 		1347CE6F2DC1D6BA0034CA90 /* EmailVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE6D2DC1D6BA0034CA90 /* EmailVerificationView.swift */; };
 		1347CE702DC1D6BA0034CA90 /* EmailVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE6D2DC1D6BA0034CA90 /* EmailVerificationView.swift */; };
@@ -116,9 +116,9 @@
 		1303FF962DD9269900962E3D /* PremiumButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumButtonStyle.swift; sourceTree = "<group>"; };
 		1303FFA22DD92DEA00962E3D /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		1303FFA62DD92E0C00962E3D /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
-		1347CD452DB5E3BF0034CA90 /* Possam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Possam.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1347CD5A2DB5E3C10034CA90 /* PossamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PossamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1347CD642DB5E3C10034CA90 /* PossamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PossamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1347CD452DB5E3BF0034CA90 /* Inbox0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inbox0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1347CD5A2DB5E3C10034CA90 /* Inbox0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Inbox0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1347CD642DB5E3C10034CA90 /* Inbox0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Inbox0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1347CDDE2DC188AD0034CA90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1347CDE02DC188AD0034CA90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1347CDE12DC188AD0034CA90 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		1347CE002DC188AD0034CA90 /* PossamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossamUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1347CE612DC1BF890034CA90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1347CE652DC1C44B0034CA90 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		1347CE692DC1C5590034CA90 /* PossamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossamApp.swift; sourceTree = "<group>"; };
+		1347CE692DC1C5590034CA90 /* Inbox0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inbox0App.swift; sourceTree = "<group>"; };
 		1347CE6D2DC1D6BA0034CA90 /* EmailVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVerificationView.swift; sourceTree = "<group>"; };
 		1347CE712DC56C540034CA90 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,7 +178,7 @@
 		1347CD3C2DB5E3BF0034CA90 = {
 			isa = PBXGroup;
 			children = (
-				1347CDFB2DC188AD0034CA90 /* Possam */,
+				1347CDFB2DC188AD0034CA90 /* Inbox0 */,
 				1347CDFE2DC188AD0034CA90 /* PossamTests */,
 				1347CE012DC188AD0034CA90 /* PossamUITests */,
 				1347CD782DB5E67A0034CA90 /* Frameworks */,
@@ -189,9 +189,9 @@
 		1347CD462DB5E3BF0034CA90 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1347CD452DB5E3BF0034CA90 /* Possam.app */,
-				1347CD5A2DB5E3C10034CA90 /* PossamTests.xctest */,
-				1347CD642DB5E3C10034CA90 /* PossamUITests.xctest */,
+				1347CD452DB5E3BF0034CA90 /* Inbox0.app */,
+				1347CD5A2DB5E3C10034CA90 /* Inbox0Tests.xctest */,
+				1347CD642DB5E3C10034CA90 /* Inbox0UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -211,7 +211,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		1347CDFB2DC188AD0034CA90 /* Possam */ = {
+		1347CDFB2DC188AD0034CA90 /* Inbox0 */ = {
 			isa = PBXGroup;
 			children = (
 				1347CDDF2DC188AD0034CA90 /* Preview Content */,
@@ -230,7 +230,7 @@
 				1347CDF32DC188AD0034CA90 /* SignupView.swift */,
 				1347CDF42DC188AD0034CA90 /* SplashView.swift */,
 				1303FF922DD91EB600962E3D /* SimplifiedModels.swift */,
-				1347CE692DC1C5590034CA90 /* PossamApp.swift */,
+				1347CE692DC1C5590034CA90 /* Inbox0App.swift */,
 				1303FFA22DD92DEA00962E3D /* AppColors.swift */,
 				1347CDF52DC188AD0034CA90 /* SupabaseAuthManager.swift */,
 				1303FFA62DD92E0C00962E3D /* ColorExtension.swift */,
@@ -240,7 +240,7 @@
 				1347CDF92DC188AD0034CA90 /* Views.swift */,
 				1347CDFA2DC188AD0034CA90 /* WelcomeView.swift */,
 			);
-			path = Possam;
+			path = Inbox0;
 			sourceTree = "<group>";
 		};
 		1347CDFE2DC188AD0034CA90 /* PossamTests */ = {
@@ -263,9 +263,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1347CD442DB5E3BF0034CA90 /* Possam */ = {
+		1347CD442DB5E3BF0034CA90 /* Inbox0 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1347CD6E2DB5E3C10034CA90 /* Build configuration list for PBXNativeTarget "Possam" */;
+			buildConfigurationList = 1347CD6E2DB5E3C10034CA90 /* Build configuration list for PBXNativeTarget "Inbox0" */;
 			buildPhases = (
 				1347CD412DB5E3BF0034CA90 /* Sources */,
 				1347CD422DB5E3BF0034CA90 /* Frameworks */,
@@ -275,7 +275,7 @@
 			);
 			dependencies = (
 			);
-			name = Possam;
+			name = Inbox0;
 			packageProductDependencies = (
 				1347CD792DB5E67A0034CA90 /* Vapi */,
 				1347CD9E2DB7FD480034CA90 /* Auth */,
@@ -284,12 +284,12 @@
 				1347CDA52DB7FF120034CA90 /* GoogleSignInSwift */,
 			);
 			productName = AskNeha;
-			productReference = 1347CD452DB5E3BF0034CA90 /* Possam.app */;
+			productReference = 1347CD452DB5E3BF0034CA90 /* Inbox0.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1347CD592DB5E3C10034CA90 /* PossamTests */ = {
+		1347CD592DB5E3C10034CA90 /* Inbox0Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1347CD712DB5E3C10034CA90 /* Build configuration list for PBXNativeTarget "PossamTests" */;
+			buildConfigurationList = 1347CD712DB5E3C10034CA90 /* Build configuration list for PBXNativeTarget "Inbox0Tests" */;
 			buildPhases = (
 				1347CD562DB5E3C10034CA90 /* Sources */,
 				1347CD572DB5E3C10034CA90 /* Frameworks */,
@@ -300,16 +300,16 @@
 			dependencies = (
 				1347CD5C2DB5E3C10034CA90 /* PBXTargetDependency */,
 			);
-			name = PossamTests;
+			name = Inbox0Tests;
 			packageProductDependencies = (
 			);
 			productName = AskNehaTests;
-			productReference = 1347CD5A2DB5E3C10034CA90 /* PossamTests.xctest */;
+			productReference = 1347CD5A2DB5E3C10034CA90 /* Inbox0Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1347CD632DB5E3C10034CA90 /* PossamUITests */ = {
+		1347CD632DB5E3C10034CA90 /* Inbox0UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1347CD742DB5E3C10034CA90 /* Build configuration list for PBXNativeTarget "PossamUITests" */;
+			buildConfigurationList = 1347CD742DB5E3C10034CA90 /* Build configuration list for PBXNativeTarget "Inbox0UITests" */;
 			buildPhases = (
 				1347CD602DB5E3C10034CA90 /* Sources */,
 				1347CD612DB5E3C10034CA90 /* Frameworks */,
@@ -320,11 +320,11 @@
 			dependencies = (
 				1347CD662DB5E3C10034CA90 /* PBXTargetDependency */,
 			);
-			name = PossamUITests;
+			name = Inbox0UITests;
 			packageProductDependencies = (
 			);
 			productName = AskNehaUITests;
-			productReference = 1347CD642DB5E3C10034CA90 /* PossamUITests.xctest */;
+			productReference = 1347CD642DB5E3C10034CA90 /* Inbox0UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -350,7 +350,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1347CD402DB5E3BF0034CA90 /* Build configuration list for PBXProject "Possam" */;
+			buildConfigurationList = 1347CD402DB5E3BF0034CA90 /* Build configuration list for PBXProject "Inbox0" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -369,9 +369,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1347CD442DB5E3BF0034CA90 /* Possam */,
-				1347CD592DB5E3C10034CA90 /* PossamTests */,
-				1347CD632DB5E3C10034CA90 /* PossamUITests */,
+				1347CD442DB5E3BF0034CA90 /* Inbox0 */,
+				1347CD592DB5E3C10034CA90 /* Inbox0Tests */,
+				1347CD632DB5E3C10034CA90 /* Inbox0UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -422,7 +422,7 @@
 				1347CE682DC1C44B0034CA90 /* AppCoordinator.swift in Sources */,
 				1347CE082DC188AD0034CA90 /* GoogleAuthManager.swift in Sources */,
 				1347CE622DC1BF890034CA90 /* AppDelegate.swift in Sources */,
-				1347CE6B2DC1C5590034CA90 /* PossamApp.swift in Sources */,
+				1347CE6B2DC1C5590034CA90 /* Inbox0App.swift in Sources */,
 				1303FFA72DD92E0C00962E3D /* ColorExtension.swift in Sources */,
 				1347CE0D2DC188AD0034CA90 /* VapiViewModel.swift in Sources */,
 				1347CE0F2DC188AD0034CA90 /* ContentView.swift in Sources */,
@@ -452,7 +452,7 @@
 				1347CE2A2DC188AD0034CA90 /* GoogleAuthManager.swift in Sources */,
 				1347CE2C2DC188AD0034CA90 /* PossamUITestsLaunchTests.swift in Sources */,
 				1347CE2F2DC188AD0034CA90 /* VapiViewModel.swift in Sources */,
-				1347CE6C2DC1C5590034CA90 /* PossamApp.swift in Sources */,
+				1347CE6C2DC1C5590034CA90 /* Inbox0App.swift in Sources */,
 				1347CE312DC188AD0034CA90 /* ContentView.swift in Sources */,
 				1347CE332DC188AD0034CA90 /* WelcomeView.swift in Sources */,
 				1347CE342DC188AD0034CA90 /* SplashView.swift in Sources */,
@@ -483,7 +483,7 @@
 				1347CE462DC188AD0034CA90 /* GoogleAuthManager.swift in Sources */,
 				1347CE482DC188AD0034CA90 /* PossamUITestsLaunchTests.swift in Sources */,
 				1347CE4B2DC188AD0034CA90 /* VapiViewModel.swift in Sources */,
-				1347CE6A2DC1C5590034CA90 /* PossamApp.swift in Sources */,
+				1347CE6A2DC1C5590034CA90 /* Inbox0App.swift in Sources */,
 				1347CE4D2DC188AD0034CA90 /* ContentView.swift in Sources */,
 				1347CE4F2DC188AD0034CA90 /* WelcomeView.swift in Sources */,
 				1347CE502DC188AD0034CA90 /* SplashView.swift in Sources */,
@@ -507,12 +507,12 @@
 /* Begin PBXTargetDependency section */
 		1347CD5C2DB5E3C10034CA90 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1347CD442DB5E3BF0034CA90 /* Possam */;
+			target = 1347CD442DB5E3BF0034CA90 /* Inbox0 */;
 			targetProxy = 1347CD5B2DB5E3C10034CA90 /* PBXContainerItemProxy */;
 		};
 		1347CD662DB5E3C10034CA90 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1347CD442DB5E3BF0034CA90 /* Possam */;
+			target = 1347CD442DB5E3BF0034CA90 /* Inbox0 */;
 			targetProxy = 1347CD652DB5E3C10034CA90 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -570,6 +570,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Inbox0/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -627,6 +628,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Inbox0/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -648,8 +650,8 @@
 				DEVELOPMENT_TEAM = JM3YZZR35Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Possam/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Possam;
+				INFOPLIST_FILE = Inbox0/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Inbox0;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -681,8 +683,8 @@
 				DEVELOPMENT_TEAM = JM3YZZR35Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Possam/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Possam;
+				INFOPLIST_FILE = Inbox0/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Inbox0;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -778,7 +780,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1347CD402DB5E3BF0034CA90 /* Build configuration list for PBXProject "Possam" */ = {
+		1347CD402DB5E3BF0034CA90 /* Build configuration list for PBXProject "Inbox0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1347CD6C2DB5E3C10034CA90 /* Debug */,
@@ -787,7 +789,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1347CD6E2DB5E3C10034CA90 /* Build configuration list for PBXNativeTarget "Possam" */ = {
+		1347CD6E2DB5E3C10034CA90 /* Build configuration list for PBXNativeTarget "Inbox0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1347CD6F2DB5E3C10034CA90 /* Debug */,
@@ -796,7 +798,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1347CD712DB5E3C10034CA90 /* Build configuration list for PBXNativeTarget "PossamTests" */ = {
+		1347CD712DB5E3C10034CA90 /* Build configuration list for PBXNativeTarget "Inbox0Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1347CD722DB5E3C10034CA90 /* Debug */,
@@ -805,7 +807,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1347CD742DB5E3C10034CA90 /* Build configuration list for PBXNativeTarget "PossamUITests" */ = {
+		1347CD742DB5E3C10034CA90 /* Build configuration list for PBXNativeTarget "Inbox0UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1347CD752DB5E3C10034CA90 /* Debug */,
