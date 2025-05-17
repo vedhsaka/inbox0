@@ -47,9 +47,7 @@ struct ContentView: View {
             .ignoresSafeArea()
             
             // Premium Audio Wave Visualization
-            VStack(spacing: 0) {
-                Spacer()
-                
+            ZStack {
                 // Audio Waveform (inspired by Image 3)
                 ZStack {
                     // Gold circle outline
@@ -74,42 +72,45 @@ struct ContentView: View {
                         .frame(width: pulseAnimation ? 260 : 220, height: pulseAnimation ? 260 : 220)
                         .opacity(pulseAnimation ? 0 : 0.5)
                 }
-                .padding(.bottom, 60)
-                
-                // Microphone Button
-                Button(action: {
-                    if vapiViewModel.isCallActive {
-                        updateStatus("Assistant stopped")
-                        vapiViewModel.stopAssistant()
-                    } else {
-                        updateStatus("Listening...")
-                        vapiViewModel.startAssistant()
-                    }
-                }) {
-                    ZStack {
-                        // Button background
-                        Circle()
-                            .fill(
-                                vapiViewModel.isCallActive ?
-                                    LinearGradient.redGradient :
-                                    LinearGradient.navyGradient
-                            )
-                            .frame(width: 76, height: 76)
-                            .shadow(color: Color.black.opacity(0.15), radius: 15, x: 0, y: 8)
-                        
-                        // Icon
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+
+                VStack {
+                    Spacer()
+                    // Microphone Button
+                    Button(action: {
                         if vapiViewModel.isCallActive {
-                            RoundedRectangle(cornerRadius: 4)
-                                .fill(Color.white)
-                                .frame(width: 20, height: 20)
+                            updateStatus("Assistant stopped")
+                            vapiViewModel.stopAssistant()
                         } else {
-                            Image(systemName: "mic.fill")
-                                .font(.system(size: 30))
-                                .foregroundColor(.white)
+                            updateStatus("Listening...")
+                            vapiViewModel.startAssistant()
+                        }
+                    }) {
+                        ZStack {
+                            // Button background
+                            Circle()
+                                .fill(
+                                    vapiViewModel.isCallActive ?
+                                        LinearGradient.redGradient :
+                                        LinearGradient.navyGradient
+                                )
+                                .frame(width: 76, height: 76)
+                                .shadow(color: Color.black.opacity(0.15), radius: 15, x: 0, y: 8)
+                            
+                            // Icon
+                            if vapiViewModel.isCallActive {
+                                RoundedRectangle(cornerRadius: 4)
+                                    .fill(Color.white)
+                                    .frame(width: 20, height: 20)
+                            } else {
+                                Image(systemName: "mic.fill")
+                                    .font(.system(size: 30))
+                                    .foregroundColor(.white)
+                            }
                         }
                     }
+                    .padding(.bottom, 60)
                 }
-                .padding(.bottom, 60)
             }
             
             // Status indicator (elegant toast)
@@ -485,5 +486,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(AuthenticationViewModel())
+            .environmentObject(AppState())
     }
 }
