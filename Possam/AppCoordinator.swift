@@ -1,10 +1,3 @@
-//
-//  AppState.swift
-//  Possam
-//
-//  Created by Akash Thakur on 4/29/25.
-//
-
 import SwiftUI
 
 // AppState to manage global application state
@@ -85,7 +78,6 @@ class AppState: ObservableObject {
     // Handle successful authentication
     func handleSuccessfulAuth() {
         self.isAuthenticated = true
-        let hasCompletedOnboarding = UserDefaults.standard.bool(forKey: "hasCompletedOnboarding")
         // Skip tools for now and go directly to main
         self.navigateTo(.main)
     }
@@ -102,13 +94,6 @@ class AppState: ObservableObject {
         self.verificationEmail = email
         self.navigateTo(.verification)
     }
-    
-    // Complete onboarding
-    func completeOnboarding() {
-        self.hasCompletedOnboarding = true
-        UserDefaults.standard.set(true, forKey: "hasCompletedOnboarding")
-        self.navigateTo(.main)
-    }
 }
 
 // Define all possible routes in the app
@@ -117,8 +102,7 @@ enum AppRoute {
     case welcome
     case login
     case signup
-    case verification  // New route for email verification
-    case tools
+    case verification
     case main
     case settings
 }
@@ -156,16 +140,13 @@ struct AppCoordinator: View {
                     EmailVerificationView(email: appState.verificationEmail ?? "")
                         .environmentObject(authViewModel)
                         .environmentObject(appState)
-                case .tools:
-                    ContentView()
-                        .environmentObject(authViewModel)
-                        .environmentObject(appState)
                 case .main:
                     ContentView()
                         .environmentObject(authViewModel)
                         .environmentObject(appState)
                 case .settings:
-                    Text("Settings View")
+                    SettingsView(showSideMenu: .constant(false))
+                        .environmentObject(authViewModel)
                         .environmentObject(appState)
                 }
             }

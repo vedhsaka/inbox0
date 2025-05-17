@@ -1,15 +1,8 @@
-//
-//  PossamApp.swift
-//  Possam
-//
-//  Created by Akash Thakur on 4/29/25.
-//
-
-
 import SwiftUI
 
+// Update the main app file with the new premium name
 @main
-struct PossamApp: App {
+struct VoiceEliteApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some Scene {

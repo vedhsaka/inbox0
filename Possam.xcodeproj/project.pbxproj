@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1303FF932DD91EB600962E3D /* SimplifiedModels.swift in Resources */ = {isa = PBXBuildFile; fileRef = 1303FF922DD91EB600962E3D /* SimplifiedModels.swift */; };
+		1303FF942DD91EB600962E3D /* SimplifiedModels.swift in Resources */ = {isa = PBXBuildFile; fileRef = 1303FF922DD91EB600962E3D /* SimplifiedModels.swift */; };
+		1303FF952DD91EB600962E3D /* SimplifiedModels.swift in Resources */ = {isa = PBXBuildFile; fileRef = 1303FF922DD91EB600962E3D /* SimplifiedModels.swift */; };
+		1303FF972DD9269900962E3D /* PremiumButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FF962DD9269900962E3D /* PremiumButtonStyle.swift */; };
+		1303FF982DD9269900962E3D /* PremiumButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FF962DD9269900962E3D /* PremiumButtonStyle.swift */; };
+		1303FF992DD9269900962E3D /* PremiumButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FF962DD9269900962E3D /* PremiumButtonStyle.swift */; };
+		1303FFA32DD92DEA00962E3D /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FFA22DD92DEA00962E3D /* AppColors.swift */; };
+		1303FFA42DD92DEA00962E3D /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FFA22DD92DEA00962E3D /* AppColors.swift */; };
+		1303FFA52DD92DEA00962E3D /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FFA22DD92DEA00962E3D /* AppColors.swift */; };
+		1303FFA72DD92E0C00962E3D /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FFA62DD92E0C00962E3D /* ColorExtension.swift */; };
+		1303FFA82DD92E0C00962E3D /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FFA62DD92E0C00962E3D /* ColorExtension.swift */; };
+		1303FFA92DD92E0C00962E3D /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303FFA62DD92E0C00962E3D /* ColorExtension.swift */; };
 		1347CD7A2DB5E67A0034CA90 /* Vapi in Frameworks */ = {isa = PBXBuildFile; productRef = 1347CD792DB5E67A0034CA90 /* Vapi */; };
 		1347CD9F2DB7FD480034CA90 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 1347CD9E2DB7FD480034CA90 /* Auth */; };
 		1347CDA12DB7FEC90034CA90 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1347CDA02DB7FEC90034CA90 /* Supabase */; };
@@ -15,23 +27,16 @@
 		1347CE042DC188AD0034CA90 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE12DC188AD0034CA90 /* AuthenticationViewModel.swift */; };
 		1347CE052DC188AD0034CA90 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF02DC188AD0034CA90 /* Persistence.swift */; };
 		1347CE062DC188AD0034CA90 /* SupabaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF52DC188AD0034CA90 /* SupabaseAuthManager.swift */; };
-		1347CE072DC188AD0034CA90 /* PossamCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF12DC188AD0034CA90 /* PossamCharacterView.swift */; };
 		1347CE082DC188AD0034CA90 /* GoogleAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE82DC188AD0034CA90 /* GoogleAuthManager.swift */; };
-		1347CE092DC188AD0034CA90 /* CloudVisualizationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE42DC188AD0034CA90 /* CloudVisualizationViews.swift */; };
-		1347CE0B2DC188AD0034CA90 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF72DC188AD0034CA90 /* Triangle.swift */; };
 		1347CE0D2DC188AD0034CA90 /* VapiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF82DC188AD0034CA90 /* VapiViewModel.swift */; };
 		1347CE0F2DC188AD0034CA90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE62DC188AD0034CA90 /* ContentView.swift */; };
-		1347CE102DC188AD0034CA90 /* HapticFeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE92DC188AD0034CA90 /* HapticFeedbackManager.swift */; };
 		1347CE112DC188AD0034CA90 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDFA2DC188AD0034CA90 /* WelcomeView.swift */; };
 		1347CE122DC188AD0034CA90 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF42DC188AD0034CA90 /* SplashView.swift */; };
 		1347CE142DC188AD0034CA90 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF62DC188AD0034CA90 /* ToolsView.swift */; };
 		1347CE162DC188AD0034CA90 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDEC2DC188AD0034CA90 /* LoginView.swift */; };
 		1347CE172DC188AD0034CA90 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDED2DC188AD0034CA90 /* Models.swift */; };
-		1347CE182DC188AD0034CA90 /* EyeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE72DC188AD0034CA90 /* EyeView.swift */; };
-		1347CE192DC188AD0034CA90 /* CharacterBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE22DC188AD0034CA90 /* CharacterBodyView.swift */; };
 		1347CE1B2DC188AD0034CA90 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF32DC188AD0034CA90 /* SignupView.swift */; };
 		1347CE1C2DC188AD0034CA90 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF92DC188AD0034CA90 /* Views.swift */; };
-		1347CE1E2DC188AD0034CA90 /* ParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDEF2DC188AD0034CA90 /* ParticleSystem.swift */; };
 		1347CE202DC188AD0034CA90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1347CDE02DC188AD0034CA90 /* Assets.xcassets */; };
 		1347CE222DC188AD0034CA90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1347CDDE2DC188AD0034CA90 /* Preview Assets.xcassets */; };
 		1347CE232DC188AD0034CA90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1347CDE02DC188AD0034CA90 /* Assets.xcassets */; };
@@ -40,49 +45,35 @@
 		1347CE262DC188AD0034CA90 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE12DC188AD0034CA90 /* AuthenticationViewModel.swift */; };
 		1347CE272DC188AD0034CA90 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF02DC188AD0034CA90 /* Persistence.swift */; };
 		1347CE282DC188AD0034CA90 /* SupabaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF52DC188AD0034CA90 /* SupabaseAuthManager.swift */; };
-		1347CE292DC188AD0034CA90 /* PossamCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF12DC188AD0034CA90 /* PossamCharacterView.swift */; };
 		1347CE2A2DC188AD0034CA90 /* GoogleAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE82DC188AD0034CA90 /* GoogleAuthManager.swift */; };
-		1347CE2B2DC188AD0034CA90 /* CloudVisualizationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE42DC188AD0034CA90 /* CloudVisualizationViews.swift */; };
 		1347CE2C2DC188AD0034CA90 /* PossamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE002DC188AD0034CA90 /* PossamUITestsLaunchTests.swift */; };
-		1347CE2D2DC188AD0034CA90 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF72DC188AD0034CA90 /* Triangle.swift */; };
 		1347CE2F2DC188AD0034CA90 /* VapiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF82DC188AD0034CA90 /* VapiViewModel.swift */; };
 		1347CE312DC188AD0034CA90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE62DC188AD0034CA90 /* ContentView.swift */; };
-		1347CE322DC188AD0034CA90 /* HapticFeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE92DC188AD0034CA90 /* HapticFeedbackManager.swift */; };
 		1347CE332DC188AD0034CA90 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDFA2DC188AD0034CA90 /* WelcomeView.swift */; };
 		1347CE342DC188AD0034CA90 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF42DC188AD0034CA90 /* SplashView.swift */; };
 		1347CE362DC188AD0034CA90 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF62DC188AD0034CA90 /* ToolsView.swift */; };
 		1347CE382DC188AD0034CA90 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDEC2DC188AD0034CA90 /* LoginView.swift */; };
 		1347CE392DC188AD0034CA90 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDED2DC188AD0034CA90 /* Models.swift */; };
-		1347CE3A2DC188AD0034CA90 /* EyeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE72DC188AD0034CA90 /* EyeView.swift */; };
-		1347CE3B2DC188AD0034CA90 /* CharacterBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE22DC188AD0034CA90 /* CharacterBodyView.swift */; };
 		1347CE3C2DC188AD0034CA90 /* PossamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDFD2DC188AD0034CA90 /* PossamTests.swift */; };
 		1347CE3D2DC188AD0034CA90 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF32DC188AD0034CA90 /* SignupView.swift */; };
 		1347CE3E2DC188AD0034CA90 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF92DC188AD0034CA90 /* Views.swift */; };
 		1347CE3F2DC188AD0034CA90 /* PossamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDFF2DC188AD0034CA90 /* PossamUITests.swift */; };
-		1347CE402DC188AD0034CA90 /* ParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDEF2DC188AD0034CA90 /* ParticleSystem.swift */; };
 		1347CE422DC188AD0034CA90 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE12DC188AD0034CA90 /* AuthenticationViewModel.swift */; };
 		1347CE432DC188AD0034CA90 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF02DC188AD0034CA90 /* Persistence.swift */; };
 		1347CE442DC188AD0034CA90 /* SupabaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF52DC188AD0034CA90 /* SupabaseAuthManager.swift */; };
-		1347CE452DC188AD0034CA90 /* PossamCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF12DC188AD0034CA90 /* PossamCharacterView.swift */; };
 		1347CE462DC188AD0034CA90 /* GoogleAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE82DC188AD0034CA90 /* GoogleAuthManager.swift */; };
-		1347CE472DC188AD0034CA90 /* CloudVisualizationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE42DC188AD0034CA90 /* CloudVisualizationViews.swift */; };
 		1347CE482DC188AD0034CA90 /* PossamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CE002DC188AD0034CA90 /* PossamUITestsLaunchTests.swift */; };
-		1347CE492DC188AD0034CA90 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF72DC188AD0034CA90 /* Triangle.swift */; };
 		1347CE4B2DC188AD0034CA90 /* VapiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF82DC188AD0034CA90 /* VapiViewModel.swift */; };
 		1347CE4D2DC188AD0034CA90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE62DC188AD0034CA90 /* ContentView.swift */; };
-		1347CE4E2DC188AD0034CA90 /* HapticFeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE92DC188AD0034CA90 /* HapticFeedbackManager.swift */; };
 		1347CE4F2DC188AD0034CA90 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDFA2DC188AD0034CA90 /* WelcomeView.swift */; };
 		1347CE502DC188AD0034CA90 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF42DC188AD0034CA90 /* SplashView.swift */; };
 		1347CE522DC188AD0034CA90 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF62DC188AD0034CA90 /* ToolsView.swift */; };
 		1347CE542DC188AD0034CA90 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDEC2DC188AD0034CA90 /* LoginView.swift */; };
 		1347CE552DC188AD0034CA90 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDED2DC188AD0034CA90 /* Models.swift */; };
-		1347CE562DC188AD0034CA90 /* EyeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE72DC188AD0034CA90 /* EyeView.swift */; };
-		1347CE572DC188AD0034CA90 /* CharacterBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDE22DC188AD0034CA90 /* CharacterBodyView.swift */; };
 		1347CE582DC188AD0034CA90 /* PossamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDFD2DC188AD0034CA90 /* PossamTests.swift */; };
 		1347CE592DC188AD0034CA90 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF32DC188AD0034CA90 /* SignupView.swift */; };
 		1347CE5A2DC188AD0034CA90 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDF92DC188AD0034CA90 /* Views.swift */; };
 		1347CE5B2DC188AD0034CA90 /* PossamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDFF2DC188AD0034CA90 /* PossamUITests.swift */; };
-		1347CE5C2DC188AD0034CA90 /* ParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347CDEF2DC188AD0034CA90 /* ParticleSystem.swift */; };
 		1347CE5E2DC188AD0034CA90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1347CDE02DC188AD0034CA90 /* Assets.xcassets */; };
 		1347CE5F2DC188AD0034CA90 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1347CDEB2DC188AD0034CA90 /* Info.plist */; };
 		1347CE602DC188AD0034CA90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1347CDDE2DC188AD0034CA90 /* Preview Assets.xcassets */; };
@@ -121,29 +112,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1303FF922DD91EB600962E3D /* SimplifiedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplifiedModels.swift; sourceTree = "<group>"; };
+		1303FF962DD9269900962E3D /* PremiumButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumButtonStyle.swift; sourceTree = "<group>"; };
+		1303FFA22DD92DEA00962E3D /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		1303FFA62DD92E0C00962E3D /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		1347CD452DB5E3BF0034CA90 /* Possam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Possam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1347CD5A2DB5E3C10034CA90 /* PossamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PossamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1347CD642DB5E3C10034CA90 /* PossamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PossamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1347CDDE2DC188AD0034CA90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1347CDE02DC188AD0034CA90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1347CDE12DC188AD0034CA90 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
-		1347CDE22DC188AD0034CA90 /* CharacterBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBodyView.swift; sourceTree = "<group>"; };
-		1347CDE42DC188AD0034CA90 /* CloudVisualizationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudVisualizationViews.swift; sourceTree = "<group>"; };
 		1347CDE62DC188AD0034CA90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1347CDE72DC188AD0034CA90 /* EyeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeView.swift; sourceTree = "<group>"; };
 		1347CDE82DC188AD0034CA90 /* GoogleAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthManager.swift; sourceTree = "<group>"; };
-		1347CDE92DC188AD0034CA90 /* HapticFeedbackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackManager.swift; sourceTree = "<group>"; };
 		1347CDEB2DC188AD0034CA90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1347CDEC2DC188AD0034CA90 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1347CDED2DC188AD0034CA90 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		1347CDEF2DC188AD0034CA90 /* ParticleSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleSystem.swift; sourceTree = "<group>"; };
 		1347CDF02DC188AD0034CA90 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		1347CDF12DC188AD0034CA90 /* PossamCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossamCharacterView.swift; sourceTree = "<group>"; };
 		1347CDF32DC188AD0034CA90 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		1347CDF42DC188AD0034CA90 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		1347CDF52DC188AD0034CA90 /* SupabaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseAuthManager.swift; sourceTree = "<group>"; };
 		1347CDF62DC188AD0034CA90 /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
-		1347CDF72DC188AD0034CA90 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		1347CDF82DC188AD0034CA90 /* VapiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VapiViewModel.swift; sourceTree = "<group>"; };
 		1347CDF92DC188AD0034CA90 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		1347CDFA2DC188AD0034CA90 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -229,28 +217,25 @@
 				1347CDDF2DC188AD0034CA90 /* Preview Content */,
 				1347CDE02DC188AD0034CA90 /* Assets.xcassets */,
 				1347CDE12DC188AD0034CA90 /* AuthenticationViewModel.swift */,
-				1347CDE22DC188AD0034CA90 /* CharacterBodyView.swift */,
-				1347CDE42DC188AD0034CA90 /* CloudVisualizationViews.swift */,
 				1347CDE62DC188AD0034CA90 /* ContentView.swift */,
 				1347CE612DC1BF890034CA90 /* AppDelegate.swift */,
-				1347CDE72DC188AD0034CA90 /* EyeView.swift */,
 				1347CDE82DC188AD0034CA90 /* GoogleAuthManager.swift */,
-				1347CDE92DC188AD0034CA90 /* HapticFeedbackManager.swift */,
 				1347CE712DC56C540034CA90 /* SettingsView.swift */,
 				1347CDEB2DC188AD0034CA90 /* Info.plist */,
 				1347CDEC2DC188AD0034CA90 /* LoginView.swift */,
 				1347CDED2DC188AD0034CA90 /* Models.swift */,
 				1347CE652DC1C44B0034CA90 /* AppCoordinator.swift */,
 				1347CE6D2DC1D6BA0034CA90 /* EmailVerificationView.swift */,
-				1347CDEF2DC188AD0034CA90 /* ParticleSystem.swift */,
 				1347CDF02DC188AD0034CA90 /* Persistence.swift */,
-				1347CDF12DC188AD0034CA90 /* PossamCharacterView.swift */,
 				1347CDF32DC188AD0034CA90 /* SignupView.swift */,
 				1347CDF42DC188AD0034CA90 /* SplashView.swift */,
+				1303FF922DD91EB600962E3D /* SimplifiedModels.swift */,
 				1347CE692DC1C5590034CA90 /* PossamApp.swift */,
+				1303FFA22DD92DEA00962E3D /* AppColors.swift */,
 				1347CDF52DC188AD0034CA90 /* SupabaseAuthManager.swift */,
+				1303FFA62DD92E0C00962E3D /* ColorExtension.swift */,
 				1347CDF62DC188AD0034CA90 /* ToolsView.swift */,
-				1347CDF72DC188AD0034CA90 /* Triangle.swift */,
+				1303FF962DD9269900962E3D /* PremiumButtonStyle.swift */,
 				1347CDF82DC188AD0034CA90 /* VapiViewModel.swift */,
 				1347CDF92DC188AD0034CA90 /* Views.swift */,
 				1347CDFA2DC188AD0034CA90 /* WelcomeView.swift */,
@@ -398,6 +383,7 @@
 			files = (
 				1347CE202DC188AD0034CA90 /* Assets.xcassets in Resources */,
 				1347CE222DC188AD0034CA90 /* Preview Assets.xcassets in Resources */,
+				1303FF952DD91EB600962E3D /* SimplifiedModels.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +393,7 @@
 			files = (
 				1347CE232DC188AD0034CA90 /* Assets.xcassets in Resources */,
 				1347CE242DC188AD0034CA90 /* Info.plist in Resources */,
+				1303FF942DD91EB600962E3D /* SimplifiedModels.swift in Resources */,
 				1347CE252DC188AD0034CA90 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +404,7 @@
 			files = (
 				1347CE5E2DC188AD0034CA90 /* Assets.xcassets in Resources */,
 				1347CE5F2DC188AD0034CA90 /* Info.plist in Resources */,
+				1303FF932DD91EB600962E3D /* SimplifiedModels.swift in Resources */,
 				1347CE602DC188AD0034CA90 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,27 +420,23 @@
 				1347CE052DC188AD0034CA90 /* Persistence.swift in Sources */,
 				1347CE062DC188AD0034CA90 /* SupabaseAuthManager.swift in Sources */,
 				1347CE682DC1C44B0034CA90 /* AppCoordinator.swift in Sources */,
-				1347CE072DC188AD0034CA90 /* PossamCharacterView.swift in Sources */,
 				1347CE082DC188AD0034CA90 /* GoogleAuthManager.swift in Sources */,
-				1347CE092DC188AD0034CA90 /* CloudVisualizationViews.swift in Sources */,
-				1347CE0B2DC188AD0034CA90 /* Triangle.swift in Sources */,
 				1347CE622DC1BF890034CA90 /* AppDelegate.swift in Sources */,
 				1347CE6B2DC1C5590034CA90 /* PossamApp.swift in Sources */,
+				1303FFA72DD92E0C00962E3D /* ColorExtension.swift in Sources */,
 				1347CE0D2DC188AD0034CA90 /* VapiViewModel.swift in Sources */,
 				1347CE0F2DC188AD0034CA90 /* ContentView.swift in Sources */,
-				1347CE102DC188AD0034CA90 /* HapticFeedbackManager.swift in Sources */,
+				1303FF972DD9269900962E3D /* PremiumButtonStyle.swift in Sources */,
 				1347CE112DC188AD0034CA90 /* WelcomeView.swift in Sources */,
 				1347CE122DC188AD0034CA90 /* SplashView.swift in Sources */,
 				1347CE722DC56C540034CA90 /* SettingsView.swift in Sources */,
 				1347CE142DC188AD0034CA90 /* ToolsView.swift in Sources */,
 				1347CE162DC188AD0034CA90 /* LoginView.swift in Sources */,
+				1303FFA52DD92DEA00962E3D /* AppColors.swift in Sources */,
 				1347CE172DC188AD0034CA90 /* Models.swift in Sources */,
-				1347CE182DC188AD0034CA90 /* EyeView.swift in Sources */,
-				1347CE192DC188AD0034CA90 /* CharacterBodyView.swift in Sources */,
 				1347CE6E2DC1D6BA0034CA90 /* EmailVerificationView.swift in Sources */,
 				1347CE1B2DC188AD0034CA90 /* SignupView.swift in Sources */,
 				1347CE1C2DC188AD0034CA90 /* Views.swift in Sources */,
-				1347CE1E2DC188AD0034CA90 /* ParticleSystem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,34 +444,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1303FFA42DD92DEA00962E3D /* AppColors.swift in Sources */,
 				1347CE262DC188AD0034CA90 /* AuthenticationViewModel.swift in Sources */,
 				1347CE272DC188AD0034CA90 /* Persistence.swift in Sources */,
 				1347CE282DC188AD0034CA90 /* SupabaseAuthManager.swift in Sources */,
-				1347CE292DC188AD0034CA90 /* PossamCharacterView.swift in Sources */,
 				1347CE642DC1BF890034CA90 /* AppDelegate.swift in Sources */,
 				1347CE2A2DC188AD0034CA90 /* GoogleAuthManager.swift in Sources */,
-				1347CE2B2DC188AD0034CA90 /* CloudVisualizationViews.swift in Sources */,
 				1347CE2C2DC188AD0034CA90 /* PossamUITestsLaunchTests.swift in Sources */,
-				1347CE2D2DC188AD0034CA90 /* Triangle.swift in Sources */,
 				1347CE2F2DC188AD0034CA90 /* VapiViewModel.swift in Sources */,
 				1347CE6C2DC1C5590034CA90 /* PossamApp.swift in Sources */,
 				1347CE312DC188AD0034CA90 /* ContentView.swift in Sources */,
-				1347CE322DC188AD0034CA90 /* HapticFeedbackManager.swift in Sources */,
 				1347CE332DC188AD0034CA90 /* WelcomeView.swift in Sources */,
 				1347CE342DC188AD0034CA90 /* SplashView.swift in Sources */,
 				1347CE362DC188AD0034CA90 /* ToolsView.swift in Sources */,
 				1347CE382DC188AD0034CA90 /* LoginView.swift in Sources */,
 				1347CE392DC188AD0034CA90 /* Models.swift in Sources */,
 				1347CE672DC1C44B0034CA90 /* AppCoordinator.swift in Sources */,
-				1347CE3A2DC188AD0034CA90 /* EyeView.swift in Sources */,
-				1347CE3B2DC188AD0034CA90 /* CharacterBodyView.swift in Sources */,
 				1347CE732DC56C540034CA90 /* SettingsView.swift in Sources */,
 				1347CE3C2DC188AD0034CA90 /* PossamTests.swift in Sources */,
+				1303FF992DD9269900962E3D /* PremiumButtonStyle.swift in Sources */,
 				1347CE3D2DC188AD0034CA90 /* SignupView.swift in Sources */,
 				1347CE702DC1D6BA0034CA90 /* EmailVerificationView.swift in Sources */,
 				1347CE3E2DC188AD0034CA90 /* Views.swift in Sources */,
+				1303FFA82DD92E0C00962E3D /* ColorExtension.swift in Sources */,
 				1347CE3F2DC188AD0034CA90 /* PossamUITests.swift in Sources */,
-				1347CE402DC188AD0034CA90 /* ParticleSystem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,34 +475,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1303FFA32DD92DEA00962E3D /* AppColors.swift in Sources */,
 				1347CE422DC188AD0034CA90 /* AuthenticationViewModel.swift in Sources */,
 				1347CE432DC188AD0034CA90 /* Persistence.swift in Sources */,
 				1347CE442DC188AD0034CA90 /* SupabaseAuthManager.swift in Sources */,
-				1347CE452DC188AD0034CA90 /* PossamCharacterView.swift in Sources */,
 				1347CE632DC1BF890034CA90 /* AppDelegate.swift in Sources */,
 				1347CE462DC188AD0034CA90 /* GoogleAuthManager.swift in Sources */,
-				1347CE472DC188AD0034CA90 /* CloudVisualizationViews.swift in Sources */,
 				1347CE482DC188AD0034CA90 /* PossamUITestsLaunchTests.swift in Sources */,
-				1347CE492DC188AD0034CA90 /* Triangle.swift in Sources */,
 				1347CE4B2DC188AD0034CA90 /* VapiViewModel.swift in Sources */,
 				1347CE6A2DC1C5590034CA90 /* PossamApp.swift in Sources */,
 				1347CE4D2DC188AD0034CA90 /* ContentView.swift in Sources */,
-				1347CE4E2DC188AD0034CA90 /* HapticFeedbackManager.swift in Sources */,
 				1347CE4F2DC188AD0034CA90 /* WelcomeView.swift in Sources */,
 				1347CE502DC188AD0034CA90 /* SplashView.swift in Sources */,
 				1347CE522DC188AD0034CA90 /* ToolsView.swift in Sources */,
 				1347CE542DC188AD0034CA90 /* LoginView.swift in Sources */,
 				1347CE552DC188AD0034CA90 /* Models.swift in Sources */,
 				1347CE662DC1C44B0034CA90 /* AppCoordinator.swift in Sources */,
-				1347CE562DC188AD0034CA90 /* EyeView.swift in Sources */,
-				1347CE572DC188AD0034CA90 /* CharacterBodyView.swift in Sources */,
 				1347CE742DC56C540034CA90 /* SettingsView.swift in Sources */,
 				1347CE582DC188AD0034CA90 /* PossamTests.swift in Sources */,
+				1303FF982DD9269900962E3D /* PremiumButtonStyle.swift in Sources */,
 				1347CE592DC188AD0034CA90 /* SignupView.swift in Sources */,
 				1347CE6F2DC1D6BA0034CA90 /* EmailVerificationView.swift in Sources */,
 				1347CE5A2DC188AD0034CA90 /* Views.swift in Sources */,
+				1303FFA92DD92E0C00962E3D /* ColorExtension.swift in Sources */,
 				1347CE5B2DC188AD0034CA90 /* PossamUITests.swift in Sources */,
-				1347CE5C2DC188AD0034CA90 /* ParticleSystem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
