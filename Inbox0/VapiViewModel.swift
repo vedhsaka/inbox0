@@ -42,7 +42,7 @@ class VapiViewModel: ObservableObject {
     
     private func setupVapiInstance() {
         // Create Vapi instance ahead of time
-        vapi = Vapi(publicKey: "59748f0c-7adf-48fc-a160-3e98c308426b")
+        vapi = Vapi(publicKey: "Public key")
         
         // Set up event subscriptions
         setupEventPublisher()
